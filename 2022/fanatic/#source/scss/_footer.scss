@@ -41,6 +41,7 @@
     margin-bottom: 27px;
   }
   &__logo {
+    align-self: start;
     &:hover {
       path {
         fill: #0093a1;

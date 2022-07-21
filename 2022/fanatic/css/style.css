@@ -699,6 +699,10 @@ a {
 .footer__title {
   margin-bottom: 27px;
 }
+.footer__logo {
+  -ms-flex-item-align: start;
+      align-self: start;
+}
 .footer__logo:hover path {
   fill: #0093a1;
 }
