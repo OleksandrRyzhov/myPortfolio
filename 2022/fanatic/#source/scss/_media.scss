@@ -249,6 +249,11 @@
       &::before {
         border-radius: 200px 0px 110px;
       }
+      &__img {
+        &--3 {
+          border-bottom-right-radius: 45px;
+        }
+      }
     }
   }
 }
@@ -325,6 +330,11 @@
       padding: 10px 5px;
       &::before {
         border-radius: 180px 0px 95px;
+      }
+      &__img {
+        &--3 {
+          border-bottom-right-radius: 55px;
+        }
       }
     }
     &-max {

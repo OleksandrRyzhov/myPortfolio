@@ -22,10 +22,11 @@
       border: 3px solid #262c27;
       border-radius: 200px 0px 300px;
       z-index: 5;
-      top: -3px;
-      right: -3px;
-      bottom: -3px;
-      left: -3px;
+      top: -5px;
+      right: -5px;
+      bottom: -5px;
+      left: -5px;
+      overflow: hidden;
     }
     &__img {
       &--1 {
@@ -36,7 +37,7 @@
         border-bottom-left-radius: 300px;
       }
       &--3 {
-        border-bottom-right-radius: 50px;
+        border-bottom-right-radius: 140px;
       }
     }
   }
