@@ -571,6 +571,9 @@ a {
 .gallery-min__img--2 {
   border-bottom-left-radius: 300px;
 }
+.gallery-min__img--3 {
+  border-bottom-right-radius: 50px;
+}
 .gallery-max {
   display: grid;
   gap: 20px;
