@@ -1,0 +1,424 @@
+@media (max-width: 1230px) {
+  .buy {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__img {
+      order: -1;
+      max-width: 100%;
+    }
+    &__content {
+      width: 100%;
+    }
+    &__item {
+      width: 100%;
+      max-width: 600px;
+    }
+    &__price {
+      bottom: auto;
+      top: -340px;
+    }
+  }
+  // .gallery {
+  //   &-max {
+  //     &__img {
+  //     }
+  //   }
+  // }
+}
+@media (max-width: 1210px) {
+  .header {
+    &__decor-text {
+      &--two {
+        left: 10%;
+      }
+    }
+  }
+}
+@media (max-width: 1170px) {
+  .gallery {
+    &__box {
+      flex-wrap: wrap;
+    }
+    &-min {
+      margin-top: 0;
+      grid-template: auto auto / 2.3125fr 1fr;
+      width: 100%;
+      &__img {
+        width: 100%;
+      }
+    }
+    &__text {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 1070px) {
+  .header {
+    &__decor-text {
+      &--two {
+        left: 0;
+      }
+    }
+  }
+  .technology {
+    &__btn {
+      right: 33%;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .info {
+    &__top {
+      display: block;
+      &-text {
+        width: 100%;
+        &--two {
+          padding: 45px 0px 25px 0px;
+        }
+      }
+      &-img {
+        display: block;
+        width: 227px;
+        margin: 25px auto;
+      }
+    }
+    &__specs {
+      display: block;
+    }
+  }
+  .gallery {
+    &-max {
+      &__text {
+        font-size: 26px;
+      }
+    }
+  }
+}
+@media (max-width: 949px) {
+  .header {
+    &__top {
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: #000;
+        opacity: 0.05;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    &__decor-text {
+      &--one {
+        right: 0;
+      }
+      &--three {
+        right: 0;
+      }
+    }
+  }
+  .footer {
+    &__top {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__logo {
+      order: -1;
+      margin-bottom: 50px;
+      align-self: flex-start;
+    }
+    &__social-title {
+      text-align: center;
+    }
+    &__gallery {
+      gap: 20px;
+      overflow: auto;
+    }
+    &__menu {
+      &-list {
+        display: block;
+        text-align: center;
+      }
+      &-item {
+        padding: 15px 0;
+      }
+    }
+  }
+}
+@media (max-width: 912px) {
+  .info {
+    &__top {
+      margin-bottom: 35vh;
+    }
+  }
+  .gallery {
+    &-min {
+      gap: 8px 10px;
+      margin-bottom: 68px;
+    }
+  }
+  .gallery {
+    &-max {
+      gap: 10px;
+      &__text {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 799px) {
+  .header {
+    background-position: 44%;
+  }
+}
+@media (max-width: 720px) {
+  .header {
+    &__top {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px 100px;
+      padding: 37px 0;
+    }
+    &__btn {
+      width: 70%;
+    }
+    &__content {
+      min-height: calc(100vh - 244px);
+    }
+  }
+}
+@media (max-width: 680px) {
+  .gallery {
+    &-max {
+      position: relative;
+      &__img {
+        &--6 {
+          grid-column: 1/5;
+        }
+      }
+      &__text {
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 29.7%;
+        padding: 10px;
+        width: 165px;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+@media (max-width: 610px) {
+  .header {
+    &__title {
+      font-size: 50px;
+      margin: 0px 0px 10px 0px;
+    }
+    &__text {
+      font-size: 20px;
+      margin: 0px 0px 10px 0px;
+    }
+  }
+  .footer {
+    &__gallery {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 48px;
+  }
+  .info {
+    &__specs {
+      &-list {
+        width: 355px;
+      }
+      &-item {
+        display: block;
+      }
+    }
+  }
+  .gallery {
+    &-min {
+      padding: 20px 10px;
+      &::before {
+        border-radius: 200px 0px 110px;
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .buy {
+    &__price {
+      top: -280px;
+      width: 150px;
+      height: 148px;
+      font-size: 28px;
+      &:hover {
+        font-size: 34px;
+        width: 200px;
+        height: 198px;
+      }
+    }
+  }
+  .gallery {
+    &-max {
+      &__text {
+        height: 29.5%;
+      }
+    }
+  }
+}
+@media (max-width: 520px) {
+  .header {
+    &__content {
+      &-box {
+        margin: 0;
+      }
+    }
+    &__decor-text {
+      &--one,
+      &--two {
+        font-size: 100px;
+      }
+      &--one {
+        bottom: 100px;
+      }
+      &--two {
+        bottom: -3px;
+      }
+      &--three {
+        font-size: 24px;
+        max-width: 280px;
+      }
+    }
+  }
+}
+@media (max-width: 460px) {
+  .header {
+    &__title {
+      font-size: 40px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 440px) {
+  .title {
+    font-size: 40px;
+  }
+  .technology {
+    &__list {
+      &-item {
+        font-size: 14px;
+      }
+    }
+  }
+  .gallery {
+    &-min {
+      padding: 10px 5px;
+      &::before {
+        border-radius: 180px 0px 95px;
+      }
+    }
+    &-max {
+      &__text {
+        height: 29.2%;
+      }
+    }
+  }
+}
+@media (max-width: 410px) {
+  .header {
+    &::before {
+      height: 356px;
+    }
+    &::after {
+      height: 356px;
+    }
+    &__decor-text {
+      &--one,
+      &--two {
+        font-size: 77px;
+      }
+      &--one {
+        bottom: 80px;
+      }
+      &--two {
+        bottom: 0;
+      }
+      &--three {
+        font-size: 18px;
+        max-width: 200px;
+      }
+    }
+  }
+  .footer {
+    &__logo {
+      svg {
+        width: 95%;
+      }
+    }
+  }
+}
+@media (max-width: 399px) {
+  .header {
+    background-position: 40%;
+  }
+  .buy {
+    &__price {
+      top: -225px;
+      width: 110px;
+      height: 108px;
+      font-size: 20px;
+      &:hover {
+        font-size: 26px;
+        width: 160px;
+        height: 158px;
+      }
+    }
+  }
+  .gallery {
+    &-max {
+      &__text {
+        height: 29%;
+        align-self: stretch;
+      }
+    }
+  }
+}
+@media (max-width: 389px) {
+  .info {
+    &__specs {
+      &-list {
+        width: 290px;
+      }
+      &-item {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 380px) {
+  .header {
+    &__title {
+      font-size: 34px;
+      margin: 0px 0px 5px 0px;
+    }
+    &__text {
+      font-size: 16px;
+      margin: 0px 0px 5px 0px;
+    }
+  }
+}
+@media (max-width: 370px) {
+  .title {
+    font-size: 34px;
+  }
+}
