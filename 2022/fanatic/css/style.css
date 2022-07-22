@@ -219,6 +219,8 @@ a {
   border-radius: 30px;
   text-align: center;
   width: 193px;
+  position: relative;
+  z-index: 1;
 }
 .header__btn:hover {
   background-color: #b9c400;
@@ -229,6 +231,8 @@ a {
   -webkit-transition: font-size 0.3s ease;
   -o-transition: font-size 0.3s ease;
   transition: font-size 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 .header__phone:hover {
   font-size: 24px;
@@ -302,6 +306,10 @@ a {
   z-index: 4;
 }
 
+.logo {
+  position: relative;
+  z-index: 1;
+}
 .logo path {
   -webkit-transition: fill 0.3s ease;
   -o-transition: fill 0.3s ease;
