@@ -573,7 +573,7 @@ a {
   border-bottom-left-radius: 300px;
 }
 .gallery-min__img--3 {
-  border-bottom-right-radius: 140px;
+  border-bottom-right-radius: 145px;
 }
 .gallery-max {
   display: grid;
@@ -954,7 +954,7 @@ a {
     border-radius: 200px 0px 110px;
   }
   .gallery-min__img--3 {
-    border-bottom-right-radius: 45px;
+    border-bottom-right-radius: 50px;
   }
 }
 @media (max-width: 550px) {
@@ -1013,7 +1013,7 @@ a {
     border-radius: 180px 0px 95px;
   }
   .gallery-min__img--3 {
-    border-bottom-right-radius: 55px;
+    border-bottom-right-radius: 60px;
   }
   .gallery-max__text {
     height: 29.2%;

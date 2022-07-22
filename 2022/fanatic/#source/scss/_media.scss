@@ -20,12 +20,6 @@
       top: -340px;
     }
   }
-  // .gallery {
-  //   &-max {
-  //     &__img {
-  //     }
-  //   }
-  // }
 }
 @media (max-width: 1210px) {
   .header {
@@ -251,7 +245,7 @@
       }
       &__img {
         &--3 {
-          border-bottom-right-radius: 45px;
+          border-bottom-right-radius: 50px;
         }
       }
     }
@@ -333,7 +327,7 @@
       }
       &__img {
         &--3 {
-          border-bottom-right-radius: 55px;
+          border-bottom-right-radius: 60px;
         }
       }
     }
