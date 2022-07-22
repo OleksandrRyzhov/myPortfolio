@@ -50,6 +50,7 @@
 }
 @media (max-width: 1070px) {
   .header {
+    background-position: 44%;
     &__decor-text {
       &--two {
         left: 0;
@@ -97,7 +98,7 @@
         content: "";
         position: absolute;
         background-color: #000;
-        opacity: 0.05;
+        opacity: 0.1;
         top: 0;
         right: 0;
         bottom: 0;
@@ -142,6 +143,9 @@
   }
 }
 @media (max-width: 912px) {
+  .header {
+    background-position: 42%;
+  }
   .info {
     &__top {
       margin-bottom: 35vh;
@@ -162,13 +166,14 @@
     }
   }
 }
-@media (max-width: 799px) {
+@media (max-width: 830px) {
   .header {
-    background-position: 44%;
+    background-position: 41%;
   }
 }
 @media (max-width: 720px) {
   .header {
+    background-position: 40%;
     &__top {
       flex-wrap: wrap;
       justify-content: center;
@@ -184,6 +189,9 @@
   }
 }
 @media (max-width: 680px) {
+  .header {
+    background-position: 37%;
+  }
   .gallery {
     &-max {
       position: relative;
@@ -372,9 +380,6 @@
   }
 }
 @media (max-width: 399px) {
-  .header {
-    background-position: 40%;
-  }
   .buy {
     &__price {
       top: -225px;
