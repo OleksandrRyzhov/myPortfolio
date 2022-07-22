@@ -48,11 +48,13 @@
   &__btn {
     text-transform: uppercase;
     color: #ffffff;
-    padding: 12px 71px;
+    padding: 12px 15px;
     background-color: #262c27;
     border: none;
     transition: color 0.3s ease, background-color 0.3s ease;
     border-radius: 30px;
+    text-align: center;
+    width: 193px;
     &:hover {
       background-color: #b9c400;
       color: #262c27;

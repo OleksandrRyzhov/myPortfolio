@@ -210,13 +210,15 @@ a {
 .header__btn {
   text-transform: uppercase;
   color: #ffffff;
-  padding: 12px 71px;
+  padding: 12px 15px;
   background-color: #262c27;
   border: none;
   -webkit-transition: color 0.3s ease, background-color 0.3s ease;
   -o-transition: color 0.3s ease, background-color 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease;
   border-radius: 30px;
+  text-align: center;
+  width: 193px;
 }
 .header__btn:hover {
   background-color: #b9c400;
@@ -903,11 +905,11 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 30px 100px;
+    gap: 30px 500px;
     padding: 37px 0;
   }
   .header__btn {
-    width: 70%;
+    width: 45%;
   }
   .header__content {
     min-height: calc(100vh - 244px);
