@@ -147,6 +147,12 @@ a {
   line-height: 1.117em;
 }
 
+.fixed-object {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
 /* </GLOBAL> ================================================== */
 /* <HEADER> ==================================================*/
 .header {
@@ -745,6 +751,80 @@ a {
 }
 
 /* </FOOTER> ================================================== */
+/* <POPUP> ================================================== */
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 50;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup__content {
+  -webkit-transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+          transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+  opacity: 1;
+}
+.popup__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: auto 0;
+}
+.popup__content {
+  position: relative;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  -webkit-transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+          transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+.popup__close {
+  position: absolute;
+  color: #fff;
+  right: 5px;
+  top: 5px;
+  font-size: 40px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 51;
+}
+.popup__video {
+  position: relative;
+  aspect-ratio: 16/9;
+  max-width: 1280px;
+  width: 100vw;
+}
+.popup__video iframe {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* </POPUP> ================================================== */
 /* <MEDIA> ================================================== */
 @media (max-width: 1230px) {
   .buy__inner {

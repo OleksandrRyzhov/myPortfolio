@@ -48,7 +48,7 @@
               </g>
             </svg>
           </a>
-          <button class="header__btn">BUY</button>
+          <a class="header__btn" href="#buy">BUY</a>
           <a class="header__phone" href="tel:+17777777">+1 777 77 77</a>
         </div>
         <div class="header__content">
@@ -76,7 +76,7 @@
                 Edition! The ultra travel-friendly touring iSUP is built in a
                 tough but light construction that allows it to be packed into a
                 backpack half the size of a regular iSUP.
-                <button class="info__btn popup-btn">
+                <a href="#popup" class="info__btn popup-btn">
                   <svg
                     width="70"
                     height="70"
@@ -97,7 +97,7 @@
                     />
                   </svg>
                   <span>Play video</span>
-                </button>
+                </a>
               </p>
               <p class="info__top-text info__top-text--two">
                 With a thinner deck pad and tough but flexible construction, the
@@ -162,27 +162,27 @@
           </div>
         </div>
       </section>
-      <section class="buy">
+      <section id="buy" class="buy">
         <div class="container">
           <div class="buy__inner">
             <div class="buy__content">
               <h3 class="buy__title title">RAY AIR POCKET</h3>
               <ul class="buy__list">
                 <li class="buy__item">
-                  <a href="" class="buy__item-title">CLICK FINS </a>
+                  <a href="#" class="buy__item-title">CLICK FINS </a>
                   <p class="buy__item-text">
                     Comes with two 4.5’’ Click Fins – no tools required – fit
                     and remove in seconds
                   </p>
                 </li>
                 <li class="buy__item">
-                  <a href="" class="buy__item-title">REDUCED DECK PAD</a>
+                  <a href="#" class="buy__item-title">REDUCED DECK PAD</a>
                   <p class="buy__item-text">
                     Reduced area deck pad in standing area to aid packing
                   </p>
                 </li>
                 <li class="buy__item">
-                  <a href="" class="buy__item-title">BACKPACK </a>
+                  <a href="#" class="buy__item-title">BACKPACK </a>
                   <p class="buy__item-text">
                     Compact Pocket backpack with easy entry zipper for board,
                     paddle, pump and accessories (fits paddle and also regular
@@ -190,14 +190,14 @@
                   </p>
                 </li>
                 <li class="buy__item">
-                  <a href="" class="buy__item-title">TOURING SHAPE</a>
+                  <a href="#" class="buy__item-title">TOURING SHAPE</a>
                   <p class="buy__item-text">
                     Tried and tested shape based <br />
                     on our popular Ray Air 11’6’’
                   </p>
                 </li>
                 <li class="buy__item">
-                  <a href="" class="buy__item-title">EXTREMELY PORTABLE</a>
+                  <a href="#" class="buy__item-title">EXTREMELY PORTABLE</a>
                   <p class="buy__item-text">
                     Extremely portable, the <br />
                     ultimate travel companion
@@ -219,7 +219,7 @@
         <div class="technology__top">
           <div class="container">
             <div class="technology__top-inner">
-              <button class="technology__btn popup-btn">
+              <a href="#popup" class="technology__btn popup-btn">
                 <svg
                   width="70"
                   height="70"
@@ -240,7 +240,7 @@
                   />
                 </svg>
                 <span>Play video</span>
-              </button>
+              </a>
               <div class="technology__top-box">
                 <h3 class="technology__title title">MICRO TECHNOLOGY</h3>
                 <ol class="technology__list">
@@ -423,5 +423,22 @@
         </div>
       </div>
     </footer>
+    <div id="object" class="fixed-object"></div>
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content popup__content--video">
+          <a class="popup__close" href="#object">+</a>
+          <div class="popup__video">
+            <iframe
+              src="https://www.youtube.com/embed/aWNNeyodUbM"
+              title="Fanatic Ray Air 2022 - Inflatable touring SUP - Product Clip"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
