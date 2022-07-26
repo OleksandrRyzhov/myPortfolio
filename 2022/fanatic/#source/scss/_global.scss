@@ -4,8 +4,16 @@ body {
   line-height: 1.222em;
   color: #262c27;
 }
+body.lock {
+  overflow-y: hidden;
+}
 a {
   color: inherit;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
 }
 
 .container {

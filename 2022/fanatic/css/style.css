@@ -99,8 +99,17 @@ body {
   color: #262c27;
 }
 
+body.lock {
+  overflow-y: hidden;
+}
+
 a {
   color: inherit;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
 }
 
 .container {
@@ -766,11 +775,11 @@ a {
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
 }
-.popup:target {
+.popup.open {
   opacity: 1;
   visibility: visible;
 }
-.popup:target .popup__content {
+.popup.open .popup__content {
   -webkit-transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
           transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
   opacity: 1;

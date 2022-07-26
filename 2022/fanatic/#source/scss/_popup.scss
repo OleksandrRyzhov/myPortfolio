@@ -9,7 +9,7 @@
   visibility: hidden;
   z-index: 50;
   transition: all 0.8s ease 0s;
-  &:target {
+  &.open {
     opacity: 1;
     visibility: visible;
     .popup__content {
