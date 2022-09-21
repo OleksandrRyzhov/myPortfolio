@@ -1,0 +1,20 @@
+$colorGray: #8f95a5;
+$colorBlack: #263238;
+$colorLogo: #939393;
+
+@use "sass:math";
+// TO %
+@function prc($pxOne, $pxTwo) {
+  $result: math.div($pxOne, pxTwo) * 100%;
+  @return $result;
+}
+// REM
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}
+// EM
+@function em($px) {
+  $result: math.div($px, 16) + em;
+  @return $result;
+}

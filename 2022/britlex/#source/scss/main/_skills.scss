@@ -1,0 +1,106 @@
+.skills {
+  &__title {
+    text-align: center;
+    margin-bottom: 96px;
+  }
+  &__list {
+    display: grid;
+    grid-template: 531px 343px / repeat(3, 1fr);
+    gap: 20px;
+  }
+  &__item {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px 30px 44px 43px;
+    overflow: hidden;
+    &-text {
+      color: $colorGray;
+      max-width: 360px;
+      margin-bottom: 35px;
+      max-height: 72px;
+      overflow: hidden;
+    }
+    &-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $colorBlack;
+      width: 218px;
+      height: 60px;
+      color: #fff;
+      border-radius: 5px;
+      font-weight: 500;
+      font-size: rem(20);
+      line-height: rem(30);
+      transition: all 0.3s ease 0s;
+      &:hover {
+        box-shadow: 0 0 15px #19b4e8;
+        color: #24d8e8;
+      }
+    }
+    &--1 {
+      grid-row: 1/3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-height: 894px;
+      p {
+        &:nth-child(3) {
+          max-width: 340px;
+          max-height: 96px;
+        }
+      }
+    }
+    &--2,
+    &--3 {
+      max-height: 531px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+    &--4 {
+      grid-column: 2/ -1;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      max-height: 343px;
+      gap: 15px;
+      p {
+        max-width: 340px;
+      }
+    }
+  }
+  &__photo {
+    &-img {
+      &--1 {
+        margin-bottom: 35px;
+        max-width: 350px;
+      }
+      &--2 {
+        margin-top: 12px;
+        margin-bottom: -11px;
+      }
+      &--3 {
+        max-height: 226px;
+      }
+      &--4 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+    }
+    &--1 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    &--2 {
+      display: flex;
+      justify-content: end;
+    }
+    &--3 {
+      display: flex;
+      max-height: 226px;
+    }
+  }
+}

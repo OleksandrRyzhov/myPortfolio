@@ -1,0 +1,83 @@
+.home {
+  padding-top: 180px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 10px;
+  }
+  &__content-box {
+    max-width: 560px;
+    padding-right: 15px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: rem(64);
+    line-height: rem(80);
+    padding-right: 120px;
+    margin-bottom: 40px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 88px;
+      width: 120px;
+      height: 120px;
+      background-image: url("../img/home-light.png");
+      background-size: cover;
+      border-radius: 50%;
+      transition: all 2s ease 0s;
+    }
+    &:hover {
+      &::before {
+        content: "";
+        position: absolute;
+        right: 16px;
+        top: 104px;
+        width: 75px;
+        height: 75px;
+        background-color: rgba(#ffffa2, 0.7);
+        border-radius: 50%;
+        z-index: 1;
+      }
+      &::after {
+        background-color: #ffffa2;
+      }
+    }
+    br {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+  &__text {
+    font-size: rem(24);
+    line-height: rem(36);
+    color: $colorGray;
+    margin-bottom: 60px;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 438px;
+    height: 118px;
+    background-color: $colorBlack;
+    border-radius: 15px;
+    color: white;
+    font-size: rem(36);
+    line-height: rem(54);
+    transition: all 0.3s ease 0s;
+    &:hover {
+      box-shadow: 0 0 15px #19b4e8;
+      color: #24d8e8;
+    }
+  }
+  &__photo {
+    max-width: 653px;
+    &-img {
+      width: 100%;
+    }
+  }
+}
