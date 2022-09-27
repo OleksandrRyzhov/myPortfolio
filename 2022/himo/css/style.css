@@ -79,6 +79,7 @@ ul li {
   list-style: none;
 }
 
+picture source,
 img {
   vertical-align: top;
   -o-object-fit: cover;
@@ -93,12 +94,6 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
-}
-
-picture + source {
-  vertical-align: top;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 /* </NULLSTYLE> ========== */
@@ -431,10 +426,6 @@ body {
   height: 25px;
   border-radius: 7px;
   transition: all 0.3s ease 0s;
-}
-
-.slick-dots button:hover {
-  background-color: #ff4040;
 }
 
 .slick-active button {
@@ -796,6 +787,11 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .slick-dots button:hover,
+  .btn:hover {
+    background-color: #131313;
+  }
+
   .menu__icon {
     display: flex;
     position: relative;
