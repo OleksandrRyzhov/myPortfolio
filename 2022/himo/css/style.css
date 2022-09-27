@@ -95,6 +95,12 @@ h6 {
   font-weight: inherit;
 }
 
+picture + source {
+  vertical-align: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* </NULLSTYLE> ========== */
 
 /* <GLOBAL> ================================================== */
@@ -288,6 +294,11 @@ body {
   top: 50px;
 }
 
+.bike-slider__item {
+  max-width: 630px;
+  width: 100%;
+}
+
 /* </BIKE> ========== */
 
 /* <INFO> ========== */
@@ -303,6 +314,7 @@ body {
 .info__img {
   margin-right: 60px;
   flex-basis: 570px;
+  height: 100%;
 }
 
 .info__list {
@@ -336,6 +348,12 @@ body {
 .characteristics__inner {
   display: flex;
   justify-content: space-between;
+}
+
+.characteristics__inner picture {
+  align-self: center;
+  margin-left: 20px;
+  max-width: 570px;
 }
 
 .characteristics__list {
@@ -373,9 +391,7 @@ body {
 }
 
 .characteristics__img {
-  align-self: center;
-  margin-left: 20px;
-  max-width: 570px;
+  width: 100%;
 }
 
 /* </CHARACTERISTICS> ========== */
@@ -390,8 +406,12 @@ body {
   padding-left: 50px;
 }
 
-.slider__img {
+.slider__item picture {
   max-width: 1150px;
+  width: 100%;
+}
+
+.slider__img {
   width: 100%;
 }
 
@@ -673,12 +693,12 @@ body {
     padding: 50px 0;
   }
 
-  .characteristics__list {
-    min-width: 400px;
+  .characteristics__inner picture {
+    width: 50%;
   }
 
-  .characteristics__img {
-    width: 50%;
+  .characteristics__list {
+    min-width: 400px;
   }
 
   .slider {
@@ -719,6 +739,12 @@ body {
     flex-wrap: wrap-reverse;
   }
 
+  .characteristics__inner picture {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
   .characteristics__title {
     width: 100%;
     order: 1;
@@ -736,12 +762,6 @@ body {
   .characteristics__params-name:last-child,
   .characteristics__params-descr:last-child {
     margin-bottom: 0;
-  }
-
-  .characteristics__img {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 30px;
   }
 
   .form__text {
