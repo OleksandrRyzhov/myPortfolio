@@ -259,8 +259,7 @@ a {
   transition: font-size 0.3s ease;
 }
 .header__phone:hover {
-  font-size: 24px;
-  line-height: 27px;
+  scale: 1.1;
 }
 .header__content {
   min-height: calc(100vh - 161px);
