@@ -254,12 +254,12 @@ a {
 }
 .header__phone {
   background-color: rgba(221, 221, 221, 0.4);
-  -webkit-transition: font-size 0.3s ease;
-  -o-transition: font-size 0.3s ease;
-  transition: font-size 0.3s ease;
+  -webkit-transition: scale 0.3s ease;
+  -o-transition: scale 0.3s ease;
+  transition: scale 0.3s ease;
 }
 .header__phone:hover {
-  scale: 1.1;
+  scale: 1.15;
 }
 .header__content {
   min-height: calc(100vh - 161px);
@@ -774,6 +774,12 @@ a {
 }
 .footer__gallery-item {
   width: 100%;
+  -webkit-transition: scale 0.3s;
+  -o-transition: scale 0.3s;
+  transition: scale 0.3s;
+}
+.footer__gallery-item:hover {
+  scale: 1.02;
 }
 .footer__menu-list {
   font-weight: 700;
