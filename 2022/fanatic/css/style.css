@@ -784,6 +784,14 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.footer__menu-link {
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.footer__menu-link:hover {
+  background-color: #b9c400;
+}
 
 /* </FOOTER> ================================================== */
 /* <POPUP> ================================================== */
