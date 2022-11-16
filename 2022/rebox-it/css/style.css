@@ -770,8 +770,10 @@ body {
 
 .menu__arrow {
   background-color: transparent;
-  height: -moz-max-content;
-  height: max-content;
+  height: 1.875rem;
+  width: 1.875rem;
+  border-radius: 0.25rem 0.25rem 50% 50%;
+  margin-right: -0.5rem;
   font-size: 0.6875rem;
   transition: rotate 0.3s ease 0s;
 }
@@ -1973,6 +1975,10 @@ body {
   }
 
   .menu__link:hover {
+    background-color: #3a3a3c;
+  }
+
+  .menu__arrow:hover {
     background-color: #3a3a3c;
   }
 
