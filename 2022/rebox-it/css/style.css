@@ -775,7 +775,7 @@ body {
   border-radius: 0.25rem 0.25rem 50% 50%;
   margin-right: -0.5rem;
   font-size: 0.6875rem;
-  transition: rotate 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .menu__arrow._spoiler-active {
@@ -800,22 +800,22 @@ body {
 }
 
 .icon-menu {
-  display: block;
+  display: flex;
+  align-items: center;
   position: relative;
-  height: 1.125rem;
+  height: 2.8125rem;
   background-color: inherit;
   z-index: 10;
-  padding-left: 1rem;
+  padding: 0.6875rem 1rem 0.625rem 3.6875rem;
   margin-left: -1rem;
+  transition: background-color 0.3s ease 0s;
+  border-radius: 0.25rem;
 }
 
 .icon-menu__text {
-  padding: 0.875rem 1rem 0.6875rem 3.6875rem;
-  margin-left: -1rem;
-  border-radius: 0.25rem;
-  transition: background-color 0.3s ease 0s;
-  font-size: 1.0625rem;
   font-weight: 500;
+  font-size: 1.0625rem;
+  line-height: 1.4117647059em;
 }
 
 .icon-menu__line,
@@ -831,11 +831,11 @@ body {
 }
 
 .icon-menu::before {
-  top: 0;
+  top: 0.84375rem;
 }
 
 .icon-menu::after {
-  bottom: 0;
+  bottom: 0.84375rem;
 }
 
 .icon-menu__line {
@@ -1594,6 +1594,7 @@ body {
   .icon-menu {
     margin: 0;
     padding: 0;
+    height: 1.125rem;
     width: 1.875rem;
     flex: 0 0 1.875rem;
   }
@@ -1607,6 +1608,14 @@ body {
   .icon-menu::after {
     left: 0;
     width: 100%;
+  }
+
+  .icon-menu::before {
+    top: 0;
+  }
+
+  .icon-menu::after {
+    bottom: 0;
   }
 
   .products {
@@ -1982,7 +1991,7 @@ body {
     background-color: #3a3a3c;
   }
 
-  .icon-menu__text:hover {
+  .icon-menu:hover {
     background-color: #3a3a3c;
   }
 
