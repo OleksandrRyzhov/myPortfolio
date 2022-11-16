@@ -684,22 +684,7 @@ body {
   z-index: -1;
 }
 
-.menu-open .menu__body {
-  left: 0;
-}
-
-.menu-open .menu__body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 7.1875rem;
-  background-color: #171717;
-  border-bottom: 0.0625rem solid #3a3a3c;
-}
-
-.menu-open .menu__body::before {
+.menu__body::before {
   content: "";
   position: absolute;
   background-color: #171717;
@@ -708,6 +693,10 @@ body {
   bottom: 0;
   width: 20.375rem;
   z-index: -1;
+}
+
+.menu-open .menu__body {
+  left: 0;
 }
 
 .menu__inner {
@@ -1764,7 +1753,7 @@ body {
     order: -1;
   }
 
-  .menu-open .menu__body::before {
+  .menu__body::before {
     width: 18.75rem;
   }
 
@@ -1900,7 +1889,7 @@ body {
     padding: 0 0.9375rem;
   }
 
-  .menu-open .menu__body::before {
+  .menu__body::before {
     width: 18.4375rem;
   }
 
