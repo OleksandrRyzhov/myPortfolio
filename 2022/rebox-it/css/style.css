@@ -358,6 +358,23 @@ h6 {
   min-height: 100%;
   overflow-x: hidden;
   padding-top: 7.1875rem;
+  background-color: #f5f5f7;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.menu-open .wrapper::after {
+  visibility: visible;
+  background-color: rgba(23, 23, 23, 0.3);
 }
 
 .main {
@@ -365,8 +382,8 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 6.25rem;
+  padding-top: 2.5rem;
   padding-bottom: 5rem;
-  background-color: #f5f5f7;
 }
 
 .footer {
@@ -661,8 +678,8 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgba(23, 23, 23, 0.5);
+  max-width: 87.5rem;
+  margin: 0 auto;
   transition: left 0.3s ease 0s;
   z-index: -1;
 }
@@ -682,23 +699,38 @@ body {
   border-bottom: 0.0625rem solid #3a3a3c;
 }
 
-.menu__inner {
-  max-width: 87.5rem;
-  padding: 0 2.5rem 1.875rem;
-  margin: 0 auto;
-  position: relative;
-  min-height: 100%;
-}
-
-.menu__inner::after {
+.menu-open .menu__body::before {
   content: "";
   position: absolute;
   background-color: #171717;
   left: 0;
   top: 0;
-  height: 100%;
-  width: 20rem;
+  bottom: 0;
+  width: 20.375rem;
   z-index: -1;
+}
+
+.menu__inner {
+  padding: 0 0 1.875rem 2.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  max-height: 100%;
+  max-width: 20.375rem;
+}
+
+.menu__inner::-webkit-scrollbar {
+  width: 0.375rem;
+}
+
+.menu__inner::-webkit-scrollbar-track {
+  background: #3a3a3c;
+  border-radius: 0.25rem;
+}
+
+.menu__inner::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+  background: #ff6f42;
 }
 
 .menu__inner::before {
@@ -721,12 +753,12 @@ body {
 }
 
 .menu__item {
-  max-width: 18.4375rem;
   margin-left: -0.9375rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-right: 0.9375rem;
+  margin-right: -0.375rem;
   transition: background-color 0.3s ease 0s;
 }
 
@@ -737,8 +769,8 @@ body {
   min-height: 2.8125rem;
   flex: 1 1 auto;
   padding-left: 0.9375rem;
-  margin-right: -1.625rem;
-  max-width: 18.4375rem;
+  margin-right: -2.5rem;
+  max-width: 18.8125rem;
 }
 
 .menu__link::before {
@@ -933,6 +965,48 @@ body {
   font-weight: 500;
   line-height: 1.4117647059em;
   color: #333333;
+}
+
+.popular-queries__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.popular-queries__titles {
+  display: flex;
+  align-items: end;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  row-gap: 0.75rem;
+}
+
+.popular-queries__subtitle {
+  font-weight: 500;
+  line-height: 1.4117647059em;
+  color: #949494;
+  margin-bottom: 0.125rem;
+}
+
+.popular-queries__list {
+  display: flex;
+  row-gap: 0.5rem;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.popular-queries__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 0.5rem 0.4375rem;
+  border-radius: 0.5rem;
+  min-height: 2.375rem;
+  background: #ffffff;
+  border: 0.0625rem solid #fff;
+  transition: border-color 0.3s ease 0s;
 }
 
 /* </MAIN> ================================================== */
@@ -1690,12 +1764,13 @@ body {
     order: -1;
   }
 
-  .menu__inner {
-    padding: 0 1.25rem 1.875rem;
+  .menu-open .menu__body::before {
+    width: 18.75rem;
   }
 
-  .menu__inner::after {
-    width: 18.75rem;
+  .menu__inner {
+    padding: 0 0 1.875rem 1.25rem;
+    max-width: 19.125rem;
   }
 
   .products__subtitle {
@@ -1721,6 +1796,20 @@ body {
   .what-is__text {
     font-weight: 400;
     font-size: 0.9375rem;
+  }
+
+  .popular-queries__inner {
+    gap: 1.875rem;
+  }
+
+  .popular-queries__titles {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .popular-queries__subtitle {
+    font-size: 0.9375rem;
+    margin: 0;
   }
 
   .footer__body {
@@ -1811,12 +1900,13 @@ body {
     padding: 0 0.9375rem;
   }
 
-  .menu__inner {
-    padding: 0 0.9375rem 1.875rem;
+  .menu-open .menu__body::before {
+    width: 18.4375rem;
   }
 
-  .menu__inner::after {
-    width: 18.4375rem;
+  .menu__inner {
+    padding: 0 0 1.875rem 0.9375rem;
+    max-width: 18.8125rem;
   }
 
   .card-footer__items {
@@ -1908,6 +1998,10 @@ body {
   .content-sitemap__link:hover {
     font-weight: 700;
     color: #ff6f42;
+  }
+
+  .popular-queries__link:hover {
+    border-color: #ff6f42;
   }
 
   .footer__link:hover {
