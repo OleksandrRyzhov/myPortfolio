@@ -7,9 +7,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Inter:wght@400;600&family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;700&family=Roboto:wght@300&display=swap&_v=20221116151502" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20221116151502"/> -->
-		<link rel="stylesheet" href="css/style.min.css?_v=20221116151502" />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Inter:wght@400;600&family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;700&family=Roboto:wght@300&display=swap&_v=20221118182635" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20221118182635"/>
+		<link rel="stylesheet" href="css/style.min.css?_v=20221118182635" />
 		<title>Rebox Home Page</title>
 	</head>
   <body>
@@ -118,15 +118,40 @@
         </div>
       </header>
       <main class="main">
+        <section class="trustpilot">
+          <div class="container">
+            <div class="trustpilot__inner">
+              <div class="trustpilot__body">
+                <div class="trustpilot__logo">
+                  <img src="img/icons/icons.svg#trustpilot" alt="trustpilot logo">
+                  <span class="_icon-trustpilot"></span>
+                </div>
+                <div class="trustpilot__info">
+                  <div class="trustpilot__rating">
+                    <div class="trustpilot__stars">
+                      <div class="trustpilot__star _icon-star"></div>
+                      <div class="trustpilot__star _icon-star"></div>
+                      <div class="trustpilot__star _icon-star"></div>
+                      <div class="trustpilot__star _icon-star"></div>
+                      <div class="trustpilot__star _icon-star"></div>
+                    </div>
+                    <p class="trustpilot__num">4.8</p>
+                  </div>
+                  <div class="trustpilot__descr">
+                    <p class="trustpilot__text">Reviews 1342</p>
+                    <p class="trustpilot__text">Excellent</p>
+                  </div>
+                </div>
+              </div>
+              <div class="trustpilot__box">
+                <div class="trustpilot__plus _icon-warranty"><span>1 Year Warranty</span></div>
+                <div class="trustpilot__plus _icon-money-back"><span>30 Day Money-Back</span></div>
+                <div class="trustpilot__plus _icon-shipping"><span>Free Shipping</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- 
-        trustpilot
-        <section class="what-is">
-  <div class="container">
-    <div class="what-is__inner">
-      
-    </div>
-  </div>
-</section>
         Our reviews 
         <section class="what-is">
   <div class="container">
@@ -135,39 +160,153 @@
     </div>
   </div>
 </section>
-        Blog
-        <section class="what-is">
-  <div class="container">
-    <div class="what-is__inner">
-      
-    </div>
-  </div>
-</section>
-        
-        Popular queries
-        
         -->
-        <section class="popular-queries">
-  <div class="container">
-    <div class="popular-queries__inner">
-      <div class="popular-queries__titles">
-        <h2 class="popular-queries__title title-2">Popular queries</h2>
-        <p class="popular-queries__subtitle">Searches so popular -  you can't sit with them</p>
-      </div>
-      <ul class="popular-queries__list">
-        <li class="popular-queries__item">
-          <a class="popular-queries__link" href="#">Apple MacBook Pro</a>
-        </li>
-        <li class="popular-queries__item">
-          <a class="popular-queries__link" href="#">iPads 2</a>
-        </li>
-        <li class="popular-queries__item">
-          <a class="popular-queries__link" href="#">iPads pro 12.9</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
+        <section class="blog">
+          <div class="container">
+            <div class="blog__inner">
+              <div class="titles">
+                <h2 class="blog__title title-2">Blog</h2>
+                <p class="titles__subtitle">Discover all the latest about refurbished electronics</p>
+              </div>
+              <div class="blog__slider">
+                <div class="blog__item item-blog">
+                  <a class="item-blog__image" href="#">
+                    <picture><source srcset="img/blog/item-1.webp" type="image/webp"><img src="img/blog/item-1.jpeg" alt="blog image"></picture>
+                  </a>
+                  <div class="item-blog__info">
+                    <h4 class="item-blog__title title-4">
+                      <a class="item-blog__link" href="#">
+                        Top 10 Refurbished Laptops for Homeschooling. Detailed Review
+                      </a>
+                    </h4>
+                    <div class="item-blog__row">
+                      <p class="item-blog__text">
+                        Samsung
+                      </p>
+                      <p class="item-blog__date">08.02.2021</p>
+                    </div>
+                  </div>
+                  <a class="item-blog__btn" href="#">Learn more</a>
+                </div>
+                <div class="blog__item item-blog">
+                  <a class="item-blog__image" href="#">
+                    <picture><source srcset="img/blog/item-2.webp" type="image/webp"><img src="img/blog/item-2.jpeg" alt="blog image"></picture>
+                  </a>
+                  <div class="item-blog__info">
+                    <h4 class="item-blog__title title-4">
+                      <a class="item-blog__link" href="#">
+                        Refurbished Apple Laptop vs. Brand New Apple Laptop —  Is there a Difference?
+                      </a>
+                    </h4>
+                    <div class="item-blog__row">
+                      <p class="item-blog__text">
+                        Apple
+                      </p>
+                      <p class="item-blog__date">08.02.2021</p>
+                    </div>
+                  </div>
+                  <a class="item-blog__btn" href="#">Learn more</a>
+                </div>
+                <div class="blog__item item-blog">
+                  <a class="item-blog__image" href="#">
+                    <picture><source srcset="img/blog/item-3.webp" type="image/webp"><img src="img/blog/item-3.jpeg" alt="blog image"></picture>
+                  </a>
+                  <div class="item-blog__info">
+                    <h4 class="item-blog__title title-4">
+                      <a class="item-blog__link" href="#">
+                        5 Best Laptops to Buy
+                      </a>
+                    </h4>
+                    <div class="item-blog__row">
+                      <p class="item-blog__text">
+                        Apple
+                      </p>
+                      <p class="item-blog__date">08.02.2021</p>
+                    </div>
+                  </div>
+                  <a class="item-blog__btn" href="#">Learn more</a>
+                </div>
+                <div class="blog__item item-blog">
+                  <a class="item-blog__image" href="#">
+                    <picture><source srcset="img/blog/item-1.webp" type="image/webp"><img src="img/blog/item-1.jpeg" alt="blog image"></picture>
+                  </a>
+                  <div class="item-blog__info">
+                    <h4 class="item-blog__title title-4">
+                      <a class="item-blog__link" href="#">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, sapiente!
+                      </a>
+                    </h4>
+                    <div class="item-blog__row">
+                      <p class="item-blog__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, libero!
+                      </p>
+                      <p class="item-blog__date">08.02.2021</p>
+                    </div>
+                  </div>
+                  <a class="item-blog__btn" href="#">Learn more</a>
+                </div>
+                <div class="blog__item item-blog">
+                  <a class="item-blog__image" href="#">
+                    <picture><source srcset="img/blog/item-2.webp" type="image/webp"><img src="img/blog/item-2.jpeg" alt="blog image"></picture>
+                  </a>
+                  <div class="item-blog__info">
+                    <h4 class="item-blog__title title-4">
+                      <a class="item-blog__link" href="#">
+                        Refurbished Apple Laptop vs. Brand New Apple Laptop —  Is there a Difference?
+                      </a>
+                    </h4>
+                    <div class="item-blog__row">
+                      <p class="item-blog__text">
+                        Apple
+                      </p>
+                      <p class="item-blog__date">08.02.2021</p>
+                    </div>
+                  </div>
+                  <a class="item-blog__btn" href="#">Learn more</a>
+                </div>
+                <div class="blog__item item-blog">
+                  <a class="item-blog__image" href="#">
+                    <picture><source srcset="img/blog/item-3.webp" type="image/webp"><img src="img/blog/item-3.jpeg" alt="blog image"></picture>
+                  </a>
+                  <div class="item-blog__info">
+                    <h4 class="item-blog__title title-4">
+                      <a class="item-blog__link" href="#">
+                        5 Best Laptops to Buy
+                      </a>
+                    </h4>
+                    <div class="item-blog__row">
+                      <p class="item-blog__text">
+                        Apple
+                      </p>
+                      <p class="item-blog__date">08.02.2021</p>
+                    </div>
+                  </div>
+                  <a class="item-blog__btn" href="#">Learn more</a>
+                </div>
+                <div class="blog__item item-blog">
+                  <a class="item-blog__image" href="#">
+                    <picture><source srcset="img/blog/item-1.webp" type="image/webp"><img src="img/blog/item-1.jpeg" alt="blog image"></picture>
+                  </a>
+                  <div class="item-blog__info">
+                    <h4 class="item-blog__title title-4">
+                      <a class="item-blog__link" href="#">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, sapiente!
+                      </a>
+                    </h4>
+                    <div class="item-blog__row">
+                      <p class="item-blog__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, libero!
+                      </p>
+                      <p class="item-blog__date">08.02.2021</p>
+                    </div>
+                  </div>
+                  <a class="item-blog__btn" href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
         <section class="sitemap">
           <div class="container">
             <div class="sitemap__inner">
@@ -487,18 +626,9 @@
         </div>
 			</footer>
     </div>
-    <div class="popup" id="popup">
-      <div class="popup__body">
-        <div class="popup__content">
-          <a class="popup__close close-popup" href="#popup-close">+</a>
-          <div class="popup__title">Popup</div>
-          <div class="popup__text">Місце для відео, або іншого матеріалу</div>
-        </div>
-      </div>
-    </div>
-    <div class="popup-close" id="popup-close"></div>
-    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js?_v=20221116151502"></script> -->
-    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?_v=20221116151502"></script> -->
-    <script src="js/app.min.js?_v=20221116151502"></script>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js?_v=20221118182635"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?_v=20221118182635"></script>
+    <script src="js/app.min.js?_v=20221118182635"></script>
   </body>
 </html>

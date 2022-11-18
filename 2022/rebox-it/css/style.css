@@ -359,6 +359,7 @@ h6 {
   overflow-x: hidden;
   padding-top: 7.1875rem;
   background-color: #f5f5f7;
+  position: relative;
 }
 
 .wrapper::after {
@@ -370,6 +371,7 @@ h6 {
   width: 100%;
   visibility: hidden;
   transition: all 0.3s ease 0s;
+  z-index: 1;
 }
 
 .menu-open .wrapper::after {
@@ -385,6 +387,7 @@ h6 {
   padding-top: 2.5rem;
   padding-bottom: 5rem;
   max-width: 80rem;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -450,6 +453,20 @@ body {
   font-size: 1.3125rem;
   letter-spacing: -0.01em;
   line-height: 1.2857142857em;
+}
+
+.titles {
+  display: flex;
+  align-items: baseline;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  row-gap: 0.75rem;
+}
+
+.titles__subtitle {
+  font-weight: 500;
+  line-height: 1.4117647059em;
+  color: #949494;
 }
 
 /* </COMMON> ================================================== */
@@ -764,6 +781,8 @@ body {
 }
 
 .menu__link::before {
+  width: 1.5rem;
+  text-align: center;
   font-size: 1.1875rem;
 }
 
@@ -861,6 +880,311 @@ body {
 
 /* <MAIN> ================================================== */
 
+.trustpilot__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+  row-gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0.75rem 1.875rem;
+  background-color: #fff;
+  box-shadow: 0px 0.75rem 1.5rem rgba(235, 235, 237, 0.2);
+  border-radius: 0.5rem;
+}
+
+.trustpilot__body {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+}
+
+.trustpilot__logo {
+  display: flex;
+  align-items: baseline;
+  font-size: 1.470625rem;
+  gap: 0.1875rem;
+}
+
+.trustpilot__logo img {
+  width: 2.221875rem;
+  height: 2.1125rem;
+}
+
+.trustpilot__info {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 0.4375rem;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+  color: #3a3a3c;
+}
+
+.trustpilot__rating {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.trustpilot__stars {
+  display: flex;
+  gap: 0.125rem;
+}
+
+.trustpilot__star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 1.96875rem;
+  background-color: #e5e5e5;
+  color: #fff;
+  border-radius: 0.1875rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.trustpilot__star::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #20be7d;
+}
+
+.trustpilot__star:last-child::after {
+  width: 80%;
+}
+
+.trustpilot__star::before {
+  z-index: 1;
+}
+
+.trustpilot__num {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.3571428571em;
+}
+
+.trustpilot__descr {
+  display: flex;
+  align-items: center;
+  gap: 0.5625rem;
+}
+
+.trustpilot__text {
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+
+.trustpilot__text + .trustpilot__text {
+  padding-left: 0.875rem;
+  position: relative;
+}
+
+.trustpilot__text + .trustpilot__text::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: 0.3125rem;
+  background-color: #20be7d;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.trustpilot__box {
+  display: flex;
+  align-items: center;
+  gap: 1.4375rem;
+}
+
+.trustpilot__plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f7;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+}
+
+.trustpilot__plus._icon-warranty {
+  font-size: 1.375rem;
+}
+
+.trustpilot__plus._icon-money-back {
+  font-size: 1.234375rem;
+}
+
+.trustpilot__plus._icon-shipping {
+  font-size: 0.984375rem;
+}
+
+.trustpilot__plus span {
+  font-weight: 500;
+  font-size: 1.0625rem;
+  line-height: 1.2352941176em;
+}
+
+.blog__inner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 2.25rem;
+}
+
+.blog__slider {
+  padding-bottom: 4.75rem;
+  margin: 0 -0.75rem;
+}
+
+.slick-initialized .item-blog {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin: 0 0.75rem;
+  background: #ffffff;
+  box-shadow: 0 0.75rem 1.5rem rgba(235, 235, 237, 0.2);
+  border-radius: 0.5rem;
+  max-width: 24rem;
+  width: 100%;
+}
+
+.item-blog__image {
+  overflow: hidden;
+  border-radius: 0.3125rem;
+}
+
+.item-blog__image img {
+  max-width: 100%;
+  width: 100%;
+  transition: scale 0.3s ease-in 0s;
+}
+
+.item-blog__info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.item-blog__link {
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.item-blog__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3125rem;
+}
+
+.item-blog__text {
+  font-weight: 500;
+  line-height: 1.4117647059em;
+  padding: 0.25rem 0.75rem;
+  background-color: #f5f5f7;
+  border-radius: 0.25rem;
+}
+
+.item-blog__date {
+  align-self: end;
+  font-size: 1rem;
+  line-height: 1.3125em;
+  color: #acacac;
+}
+
+.item-blog__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  border: 0.0625rem solid #d8dfe9;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  font-size: 1.125rem;
+  line-height: 1.2777777778em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s, border-color 0.3s ease 0s;
+}
+
+.slick-list {
+  overflow: visible;
+}
+
+.slick-track {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.slick-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 0.625rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+}
+
+.slick-btn.slick-disabled {
+  background-color: rgba(23, 23, 23, 0.05);
+}
+
+.slick-prev {
+  translate: calc(-100% - 0.75rem) 0;
+}
+
+.slick-next {
+  translate: 0.75rem 0;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: none;
+}
+
+.popular-queries__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.popular-queries__list {
+  display: flex;
+  row-gap: 0.5rem;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.popular-queries__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 0.5rem 0.4375rem;
+  border-radius: 0.5rem;
+  min-height: 2.375rem;
+  background: #ffffff;
+  border: 0.0625rem solid #fff;
+  transition: border-color 0.3s ease 0s;
+}
+
 .sitemap__inner {
   display: flex;
   flex-direction: column;
@@ -869,7 +1193,7 @@ body {
 
 .products {
   display: flex;
-  align-items: end;
+  align-items: baseline;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   row-gap: 0.75rem;
@@ -879,7 +1203,6 @@ body {
   font-weight: 500;
   line-height: 1.4117647059em;
   color: #949494;
-  margin-bottom: 0.125rem;
 }
 
 .content-sitemap {
@@ -961,48 +1284,6 @@ body {
   font-weight: 500;
   line-height: 1.4117647059em;
   color: #333333;
-}
-
-.popular-queries__inner {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.popular-queries__titles {
-  display: flex;
-  align-items: end;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
-  row-gap: 0.75rem;
-}
-
-.popular-queries__subtitle {
-  font-weight: 500;
-  line-height: 1.4117647059em;
-  color: #949494;
-  margin-bottom: 0.125rem;
-}
-
-.popular-queries__list {
-  display: flex;
-  row-gap: 0.5rem;
-  -moz-column-gap: 0.75rem;
-       column-gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.popular-queries__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  padding: 0.5rem 0.4375rem;
-  border-radius: 0.5rem;
-  min-height: 2.375rem;
-  background: #ffffff;
-  border: 0.0625rem solid #fff;
-  transition: border-color 0.3s ease 0s;
 }
 
 /* </MAIN> ================================================== */
@@ -1221,15 +1502,14 @@ body {
 
 .trustpilot-footer__logo {
   display: flex;
-  align-items: end;
-  font-size: 1.5rem;
+  align-items: baseline;
+  font-size: 1.46875rem;
   gap: 0.1875rem;
 }
 
 .trustpilot-footer__logo img {
-  width: 2.25rem;
-  height: 2.125rem;
-  margin-bottom: 0.1875rem;
+  width: 2.221875rem;
+  height: 2.111875rem;
 }
 
 .trustpilot-footer__info {
@@ -1379,66 +1659,6 @@ body {
 
 /* <POPUP> ==================================================*/
 
-.popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.8s ease 0s;
-}
-
-.popup.open {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popup.open .popup__content {
-  translate: 0px 0px;
-  opacity: 1;
-}
-
-.popup__body {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.875rem 0.625rem;
-}
-
-.popup__content {
-  background-color: #fff;
-  max-width: 50rem;
-  padding: 1.875rem;
-  position: relative;
-  transition: all 0.8s ease 0s;
-  opacity: 0;
-  translate: 0 -100%;
-}
-
-.popup__close {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  rotate: 45deg;
-  font-size: 30px;
-  line-height: 15px;
-}
-
-.popup__title {
-  font-size: 2.5rem;
-  margin: 0px 0px 1em 0px;
-}
-
-.popup-close {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 /* </POPUP> ================================================== */
 
 @media (min-width: 48em) {
@@ -1466,6 +1686,34 @@ body {
 }
 
 @media (max-width: 79.99875em) {
+  .blog__slider {
+    max-width: 60.75rem;
+  }
+
+  .slick-initialized .item-blog {
+    max-width: 18.75rem;
+  }
+
+  .item-blog__title {
+    font-size: 1rem;
+  }
+
+  .item-blog__text {
+    font-size: 0.875rem;
+  }
+
+  .item-blog__date {
+    font-size: 0.875rem;
+  }
+
+  .item-blog__btn {
+    font-size: 1rem;
+  }
+
+  .slick-btn {
+    left: calc(50vw - 1.75rem);
+  }
+
   .footer__top {
     flex-direction: column;
   }
@@ -1478,6 +1726,70 @@ body {
 
   .footer__text {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 76.24875em) {
+  .trustpilot__inner {
+    justify-content: center;
+  }
+
+  .trustpilot__body {
+    gap: 2.6875rem;
+  }
+
+  .trustpilot__logo {
+    font-size: 1.510625rem;
+    gap: 0.225rem;
+  }
+
+  .trustpilot__logo img {
+    width: 2.32875rem;
+    height: 2.17rem;
+  }
+
+  .trustpilot__info {
+    flex-direction: row;
+  }
+
+  .trustpilot__rating {
+    gap: 0.7875rem;
+  }
+
+  .trustpilot__star {
+    width: 2.10625rem;
+    height: 2.028125rem;
+    font-size: 1.09375rem;
+  }
+
+  .trustpilot__num {
+    font-size: 0.9375rem;
+  }
+
+  .trustpilot__plus {
+    padding: 0.6875rem 1.125rem;
+  }
+
+  .trustpilot__plus._icon-warranty {
+    font-size: 1.25rem;
+  }
+
+  .trustpilot__plus._icon-money-back {
+    font-size: 1.125rem;
+  }
+
+  .trustpilot__plus._icon-shipping {
+    font-size: 0.9375rem;
+  }
+
+  .trustpilot__plus span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 76.1875em) {
+  .trustpilot__text {
+    font-size: 0.875rem;
   }
 }
 
@@ -1524,6 +1836,28 @@ body {
   }
 }
 
+@media (max-width: 64.37375em) {
+  .blog__slider {
+    max-width: 40.5rem;
+  }
+
+  .slick-initialized .item-blog {
+    padding: 1rem;
+  }
+
+  .item-blog__title {
+    font-size: 0.875rem;
+  }
+
+  .item-blog__text {
+    font-size: 0.75rem;
+  }
+
+  .item-blog__date {
+    font-size: 0.75rem;
+  }
+}
+
 @media (max-width: 64.68625em) {
   .category-footer {
     grid-template: repeat(2, 3.75rem)/repeat(3, 1fr);
@@ -1542,8 +1876,8 @@ body {
   }
 
   .trustpilot-footer__logo img {
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 1.988125rem;
+    height: 1.89rem;
   }
 
   .trustpilot-footer__info {
@@ -1619,13 +1953,25 @@ body {
     bottom: 0;
   }
 
-  .products {
-    flex-direction: column;
-    align-items: start;
+  .trustpilot__box {
+    gap: 0.6875rem;
   }
 
-  .products__subtitle {
-    margin: 0;
+  .blog__slider {
+    max-width: 39.375rem;
+    margin: 0 -0.46875rem;
+  }
+
+  .slick-initialized .item-blog {
+    margin: 0 0.46875rem;
+  }
+
+  .item-blog__image img {
+    max-height: 10.875rem;
+  }
+
+  .products {
+    flex-direction: column;
   }
 
   .content-sitemap {
@@ -1757,6 +2103,14 @@ body {
     font-size: 1.1875rem;
   }
 
+  .titles {
+    flex-direction: column;
+  }
+
+  .titles__subtitle {
+    font-size: 0.9375rem;
+  }
+
   .header__top {
     padding: 0 1.25rem;
   }
@@ -1772,6 +2126,43 @@ body {
   .menu__inner {
     padding: 0 0 1.875rem 1.25rem;
     max-width: 19.125rem;
+  }
+
+  .trustpilot__inner {
+    row-gap: 1.3125rem;
+    padding: 0.875rem 1.25rem;
+  }
+
+  .trustpilot__body {
+    gap: 1.875rem;
+  }
+
+  .trustpilot__info {
+    flex-direction: column-reverse;
+  }
+
+  .trustpilot__plus._icon-warranty {
+    font-size: 1.125rem;
+  }
+
+  .trustpilot__plus._icon-money-back {
+    font-size: 1rem;
+  }
+
+  .trustpilot__plus._icon-shipping {
+    font-size: 0.90625rem;
+  }
+
+  .trustpilot__plus span {
+    font-size: 0.8125rem;
+  }
+
+  .slick-btn {
+    left: calc(50vw - 0.78125rem);
+  }
+
+  .popular-queries__inner {
+    gap: 1.875rem;
   }
 
   .products__subtitle {
@@ -1797,20 +2188,6 @@ body {
   .what-is__text {
     font-weight: 400;
     font-size: 0.9375rem;
-  }
-
-  .popular-queries__inner {
-    gap: 1.875rem;
-  }
-
-  .popular-queries__titles {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .popular-queries__subtitle {
-    font-size: 0.9375rem;
-    margin: 0;
   }
 
   .footer__body {
@@ -1848,6 +2225,16 @@ body {
   }
 }
 
+@media (max-width: 38.74875em) {
+  .trustpilot__plus {
+    justify-content: space-between;
+  }
+
+  .blog__slider {
+    max-width: 19.6875rem;
+  }
+}
+
 @media (max-width: 34.37375em) {
   .category-footer {
     grid-template: repeat(3, 3.75rem)/repeat(2, 1fr);
@@ -1863,6 +2250,82 @@ body {
 
   .category-footer__chat span {
     font-size: 1.0625rem;
+  }
+}
+
+@media (max-width: 31.24875em) {
+  .trustpilot__inner {
+    row-gap: 1.125rem;
+    padding: 0.625rem;
+  }
+
+  .trustpilot__body {
+    gap: 1.25rem;
+  }
+
+  .trustpilot__logo {
+    font-size: 0.994375rem;
+    gap: 0.15rem;
+  }
+
+  .trustpilot__logo img {
+    width: 1.533125rem;
+    height: 1.42875rem;
+  }
+
+  .trustpilot__info {
+    row-gap: 0.3125rem;
+  }
+
+  .trustpilot__rating {
+    gap: 0.5rem;
+  }
+
+  .trustpilot__star {
+    width: 1.3875rem;
+    height: 1.3375rem;
+    font-size: 0.71875rem;
+  }
+
+  .trustpilot__num {
+    font-size: 0.625rem;
+  }
+
+  .trustpilot__descr {
+    gap: 0.375rem;
+  }
+
+  .trustpilot__text {
+    font-size: 0.5625rem;
+  }
+
+  .trustpilot__text + .trustpilot__text {
+    padding-left: 0.5625rem;
+  }
+
+  .trustpilot__text + .trustpilot__text::after {
+    height: 0.1875rem;
+    width: 0.1875rem;
+  }
+
+  .trustpilot__plus {
+    padding: 0.375rem 0.625rem;
+  }
+
+  .trustpilot__plus._icon-warranty {
+    font-size: 1rem;
+  }
+
+  .trustpilot__plus._icon-money-back {
+    font-size: 0.875rem;
+  }
+
+  .trustpilot__plus._icon-shipping {
+    font-size: 0.8125rem;
+  }
+
+  .trustpilot__plus span {
+    font-size: 0.625rem;
   }
 }
 
@@ -1930,6 +2393,23 @@ body {
 }
 
 @media (max-width: 24.99875em) {
+  .trustpilot__plus {
+    padding: 0.3125rem;
+    gap: 0.3125rem;
+  }
+
+  .trustpilot__plus._icon-warranty {
+    font-size: 0.875rem;
+  }
+
+  .trustpilot__plus._icon-money-back {
+    font-size: 0.75rem;
+  }
+
+  .trustpilot__plus._icon-shipping {
+    font-size: 0.75rem;
+  }
+
   .content-sitemap__link span {
     display: none;
   }
@@ -1996,13 +2476,37 @@ body {
     background-color: #3a3a3c;
   }
 
-  .content-sitemap__link:hover {
-    font-weight: 700;
+  .item-blog__image img:hover {
+    scale: 1.015;
+  }
+
+  .item-blog__link:hover {
     color: #ff6f42;
+  }
+
+  .item-blog__btn:hover {
+    background-color: #ff6f42;
+    color: #fff;
+    border-color: #ff6f42;
+  }
+
+  .slick-btn:hover {
+    background-color: #ff6f42;
+    color: #fff;
+  }
+
+  .slick-btn.slick-disabled:hover {
+    background-color: rgba(23, 23, 23, 0.05);
+    color: #171717;
   }
 
   .popular-queries__link:hover {
     border-color: #ff6f42;
+  }
+
+  .content-sitemap__link:hover {
+    font-weight: 700;
+    color: #ff6f42;
   }
 
   .footer__link:hover {
