@@ -1076,6 +1076,101 @@ body {
   line-height: 1.2352941176em;
 }
 
+.about-rebox__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.about-rebox__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.125rem;
+  background-color: #fff;
+  padding: 5rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(235, 235, 237, 0.2);
+  border-radius: 0.75rem;
+}
+
+.about-rebox__top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 23.5rem;
+}
+
+.about-rebox__logo img {
+  width: 100%;
+  max-width: 17.9375rem;
+  max-height: 3.9375rem;
+}
+
+.about-rebox__text {
+  line-height: 1.2941176471em;
+}
+
+.about-rebox__btn {
+  align-self: start;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.2777777778em;
+  letter-spacing: 0.01em;
+  padding: 0.75rem 2rem;
+  background-color: #ff6f42;
+  color: #fff;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease 0s;
+}
+
+.about-rebox__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3rem;
+  -moz-column-gap: 2.25rem;
+       column-gap: 2.25rem;
+}
+
+.about-rebox__box {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.about-rebox__icon {
+  align-self: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 3rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  background-color: #171717;
+  color: #fff;
+  font-size: 1.8125rem;
+}
+
+.about-rebox__icon img {
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+
+.about-rebox__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.about-rebox__title {
+  font-weight: 600;
+  line-height: 1.4117647059em;
+}
+
+.about-rebox__descr {
+  color: #707070;
+  font-size: 1rem;
+  line-height: 1.375em;
+}
+
 .reviews__inner {
   display: flex;
   flex-direction: column;
@@ -2005,6 +2100,20 @@ body {
 }
 
 @media (max-width: 74.99875em) {
+  .about-rebox__body {
+    padding: 3.75rem;
+  }
+
+  .about-rebox__content {
+    row-gap: 2rem;
+    -moz-column-gap: 1.75rem;
+         column-gap: 1.75rem;
+  }
+
+  .about-rebox__descr {
+    font-size: 0.9375rem;
+  }
+
   .content-sitemap {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -2185,6 +2294,37 @@ body {
 
   .trustpilot__box {
     gap: 0.6875rem;
+  }
+
+  .about-rebox__body {
+    padding: 2.5rem;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .about-rebox__top {
+    gap: 1.5625rem;
+    min-width: 100%;
+  }
+
+  .about-rebox__logo img {
+    max-width: 15.75rem;
+    max-height: 3.5rem;
+  }
+
+  .about-rebox__text {
+    font-size: 1rem;
+  }
+
+  .about-rebox__btn {
+    margin-top: 0.4375rem;
+    font-size: 1.0625rem;
+  }
+
+  .about-rebox__content {
+    row-gap: 1.625rem;
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
   }
 
   .blog__slider {
@@ -2409,6 +2549,51 @@ body {
     font-size: 0.8125rem;
   }
 
+  .about-rebox__logo img {
+    max-width: 9.5rem;
+    max-height: 2.125rem;
+  }
+
+  .about-rebox__text {
+    font-size: 0.9375rem;
+  }
+
+  .about-rebox__btn {
+    margin: 0;
+  }
+
+  .about-rebox__content {
+    -moz-column-gap: 0.9375rem;
+         column-gap: 0.9375rem;
+  }
+
+  .about-rebox__box {
+    gap: 1rem;
+  }
+
+  .about-rebox__icon {
+    min-width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.3125rem;
+  }
+
+  .about-rebox__icon img {
+    width: 1.1875rem;
+    height: 1.1875rem;
+  }
+
+  .about-rebox__info {
+    gap: 0.3125rem;
+  }
+
+  .about-rebox__title {
+    font-size: 0.9375rem;
+  }
+
+  .about-rebox__descr {
+    font-size: 0.75rem;
+  }
+
   .reviews__inner {
     gap: 2rem;
   }
@@ -2534,6 +2719,22 @@ body {
   }
 }
 
+@media (max-width: 34.99875em) {
+  .about-rebox__body {
+    padding: 1.875rem 1.25rem;
+  }
+
+  .about-rebox__btn {
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .about-rebox__box {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
 @media (max-width: 34.37375em) {
   .category-footer {
     grid-template: repeat(3, 3.75rem)/repeat(2, 1fr);
@@ -2549,6 +2750,13 @@ body {
 
   .category-footer__chat span {
     font-size: 1.0625rem;
+  }
+}
+
+@media (max-width: 33.12375em) {
+  .about-rebox__content {
+    -moz-column-gap: 0.625rem;
+         column-gap: 0.625rem;
   }
 }
 
@@ -2670,6 +2878,10 @@ body {
   .menu__inner {
     padding: 0 0 1.875rem 0.9375rem;
     max-width: 18.8125rem;
+  }
+
+  .about-rebox__text {
+    font-size: 0.875rem;
   }
 
   .reviews__profile span {
@@ -2820,6 +3032,10 @@ body {
 
   .icon-menu:hover {
     background-color: #3a3a3c;
+  }
+
+  .about-rebox__btn:hover {
+    background-color: #171717;
   }
 
   .reviews__profile:hover {
