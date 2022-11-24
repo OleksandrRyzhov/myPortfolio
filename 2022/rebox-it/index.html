@@ -7,14 +7,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Inter:wght@400;600&family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;700&family=Roboto:wght@300&display=swap&_v=20221120144239" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20221120144239"/>
-		<link rel="stylesheet" href="css/style.min.css?_v=20221120144239" />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Inter:wght@400;600&family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;700&family=Roboto:wght@300&display=swap&_v=20221124211341" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20221124211341"/>
+		<link rel="stylesheet" href="css/style.min.css?_v=20221124211341" />
 		<title>Rebox Home Page</title>
 	</head>
   <body>
 		<div class="wrapper">
-			<header class="header">
+			<header class="header ">
         <div class="header__top top-header">
           <div class="top-header__inner">
             <a class="header__logo" href="./">
@@ -118,40 +118,472 @@
         </div>
       </header>
       <main class="main">
-        <section class="trustpilot">
-          <div class="container">
-            <div class="trustpilot__inner">
-              <div class="trustpilot__body">
-                <div class="trustpilot__logo">
-                  <img src="img/icons/icons.svg#trustpilot" alt="trustpilot logo">
-                  <span class="_icon-trustpilot"></span>
-                </div>
-                <div class="trustpilot__info">
-                  <div class="trustpilot__rating">
-                    <div class="trustpilot__stars">
-                      <div class="trustpilot__star _icon-star"></div>
-                      <div class="trustpilot__star _icon-star"></div>
-                      <div class="trustpilot__star _icon-star"></div>
-                      <div class="trustpilot__star _icon-star"></div>
-                      <div class="trustpilot__star _icon-star"></div>
-                    </div>
-                    <p class="trustpilot__num">4.8</p>
-                  </div>
-                  <div class="trustpilot__descr">
-                    <p class="trustpilot__text">Reviews 1342</p>
-                    <p class="trustpilot__text">Excellent</p>
-                  </div>
-                </div>
-              </div>
-              <div class="trustpilot__box">
-                <div class="trustpilot__plus _icon-warranty"><span>1 Year Warranty</span></div>
-                <div class="trustpilot__plus _icon-money-back"><span>30 Day Money-Back</span></div>
-                <div class="trustpilot__plus _icon-shipping"><span>Free Shipping</span></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        
+				<div class="banners">
+					<div class="trustpilot">
+						<div class="container">
+							<div class="trustpilot__inner">
+								<div class="trustpilot__body">
+									<div class="trustpilot__logo">
+										<img src="img/icons/icons.svg#trustpilot" alt="trustpilot logo">
+										<span class="_icon-trustpilot"></span>
+									</div>
+									<div class="trustpilot__info">
+										<div class="trustpilot__rating">
+											<div class="trustpilot__stars">
+												<div class="trustpilot__star _icon-star"></div>
+												<div class="trustpilot__star _icon-star"></div>
+												<div class="trustpilot__star _icon-star"></div>
+												<div class="trustpilot__star _icon-star"></div>
+												<div class="trustpilot__star _icon-star"></div>
+											</div>
+											<p class="trustpilot__num">4.8</p>
+										</div>
+										<div class="trustpilot__descr">
+											<p class="trustpilot__text">Reviews 1342</p>
+											<p class="trustpilot__text">Excellent</p>
+										</div>
+									</div>
+								</div>
+								<div class="trustpilot__box">
+									<div class="trustpilot__plus _icon-warranty"><span>1 Year Warranty</span></div>
+									<div class="trustpilot__plus _icon-money-back"><span>30 Day Money-Back</span></div>
+									<div class="trustpilot__plus _icon-shipping"><span>Free Shipping</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="banners__body">
+						<div class="container">
+							<div class="banners__slider">
+								<div class="banners__item item-banners">
+									<p class="item-banners__text"></p>
+									<a class="item-banners__link" href="#"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="banners__links"></div> -->
+				</div>
+				<section class="bestsellers">
+					<div class="container">
+						<div class="bestsellers__inner">
+							<div class="titles">
+								<h2 class="bestsellers__title title-2">Our Bestsellers</h2>
+								<p class="titles__subtitle">The most popular products that will suit your needs</p>
+							</div>
+							<div class="bestsellers__slider">
+								<div class="bestsellers__item item-bestsellers">
+									<div class="item-bestsellers__top top-bestsellers">
+										<div class="top-bestsellers__body top-bestsellers__body--1">
+											<div class="top-bestsellers__category">
+												<p class="top-bestsellers__discount">-13% OFF</p>
+												<p class="top-bestsellers__name">Bestseller</p>
+											</div>
+										</div>
+										<a class="item-bestsellers__picture" href="#">
+											<picture><source srcset="img/bestsellers/item-1.webp" type="image/webp"><img src="img/bestsellers/item-1.jpg" alt="Apple MacBook Pro"></picture>
+										</a>
+									</div>
+									<div class="item-bestsellers__box" data-da=".top-bestsellers__body--1,767.98">
+										<div class="rating">
+											<div class="rating__stars">
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+											</div>
+											<p class="rating__text">244 <span>reviews</span></p>
+										</div>
+										<a class="item-bestsellers__title" href="#">Apple MacBook Pro</a>
+										<p class="item-bestsellers__text points">Refurbished, A1502 ME864LL/<span> </span>A - Retina Late</p>
+									</div>
+									<p class="item-bestsellers__info">Ends in: 06:12:24</p>
+									<p class="item-bestsellers__price item-bestsellers__price--1">
+										<span class="item-bestsellers__actual">AED 580.00</span>
+										<span class="item-bestsellers__old">AED 670.00</span>
+									</p>
+									<div class="item-bestsellers__btns">
+										<a class="item-bestsellers__more" href="#">Learn More</a>
+										<div class="details">
+											<button class="heart _icon-heart" data-da=".item-bestsellers__price--1,991.98"></button>
+											<a class="item-bestsellers__title" href="#">Apple MacBook Pro</a>
+											<p class="item-bestsellers__text points">Refurbished, A1502 ME864LL/<span> </span>A - Retina Late</p>
+											<div class="characteristics">
+												<p class="characteristics__info _icon-processor">
+													Processor:
+													<span>i5-5257U</span>
+												</p>
+												<p class="characteristics__info _icon-os">
+													OS:
+													<span>MAC OS</span>
+												</p>
+												<p class="characteristics__info _icon-ram">
+													RAM:
+													<span>8GB</span>
+												</p>
+												<p class="characteristics__info _icon-disk">
+													Hard Disk:
+													<span>256GB SSD</span>
+												</p>
+												<p class="characteristics__info _icon-gpu">
+													GPU:
+													<span class="points">Intel Iris 6100 graphics</span>
+												</p>
+											</div>
+											<p class="item-bestsellers__info">Ends in: 06:12:24</p>
+											<p class="item-bestsellers__price">
+												<span class="item-bestsellers__actual">AED 580.00</span>
+												<span class="item-bestsellers__old">AED 670.00</span>
+											</p>
+										</div>
+										<a class="item-bestsellers__buy _icon-cart" href="#"></a>
+									</div>
+								</div>
+								<div class="bestsellers__item item-bestsellers">
+									<div class="item-bestsellers__top top-bestsellers">
+										<div class="top-bestsellers__body top-bestsellers__body--2">
+											<div class="top-bestsellers__category">
+												<p class="top-bestsellers__discount">-13% OFF</p>
+												<p class="top-bestsellers__name">Bestseller</p>
+											</div>
+										</div>
+										<a class="item-bestsellers__picture" href="#">
+											<picture><source srcset="img/bestsellers/item-2.webp" type="image/webp"><img src="img/bestsellers/item-2.jpg" alt="Apple MacBook Pro"></picture>
+										</a>
+									</div>
+									<div class="item-bestsellers__box" data-da=".top-bestsellers__body--2,767.98">
+										<div class="rating">
+											<div class="rating__stars">
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+											</div>
+											<p class="rating__text">244 <span>reviews</span></p>
+										</div>
+										<a class="item-bestsellers__title" href="#">Apple MacBook Pro</a>
+										<p class="item-bestsellers__text points">Refurbished, A1502 ME864LL/<span> </span>A - Retina Late</p>
+									</div>
+									<p class="item-bestsellers__info">Ends in: 06:12:24</p>
+									<p class="item-bestsellers__price item-bestsellers__price--2">
+										<span class="item-bestsellers__actual">AED 580.00</span>
+										<span class="item-bestsellers__old">AED 670.00</span>
+									</p>
+									<div class="item-bestsellers__btns">
+										<a class="item-bestsellers__more" href="#">Learn More</a>
+										<div class="details">
+											<button class="heart _icon-heart" data-da=".item-bestsellers__price--2,991.98"></button>
+											<a class="item-bestsellers__title" href="#">Apple MacBook Pro</a>
+											<p class="item-bestsellers__text points">Refurbished, A1502 ME864LL/<span> </span>A - Retina Late</p>
+											<div class="characteristics">
+												<p class="characteristics__info _icon-processor">
+													Processor:
+													<span>i5-5257U</span>
+												</p>
+												<p class="characteristics__info _icon-os">
+													OS:
+													<span>MAC OS</span>
+												</p>
+												<p class="characteristics__info _icon-ram">
+													RAM:
+													<span>8GB</span>
+												</p>
+												<p class="characteristics__info _icon-disk">
+													Hard Disk:
+													<span>256GB SSD</span>
+												</p>
+												<p class="characteristics__info _icon-gpu">
+													GPU:
+													<span class="points">Intel Iris 6100 graphics</span>
+												</p>
+											</div>
+											<p class="item-bestsellers__info">Ends in: 06:12:24</p>
+											<p class="item-bestsellers__price">
+												<span class="item-bestsellers__actual">AED 580.00</span>
+												<span class="item-bestsellers__old">AED 670.00</span>
+											</p>
+										</div>
+										<a class="item-bestsellers__buy _icon-cart" href="#"></a>
+									</div>
+								</div>
+								<div class="bestsellers__item item-bestsellers">
+									<div class="item-bestsellers__top top-bestsellers">
+										<div class="top-bestsellers__body top-bestsellers__body--3">
+											<div class="top-bestsellers__category">
+												<p class="top-bestsellers__discount">-13% OFF</p>
+												<p class="top-bestsellers__name">Bestseller</p>
+											</div>
+										</div>
+										<a class="item-bestsellers__picture" href="#">
+											<picture><source srcset="img/bestsellers/item-1.webp" type="image/webp"><img src="img/bestsellers/item-1.jpg" alt="Apple MacBook Pro"></picture>
+										</a>
+									</div>
+									<div class="item-bestsellers__box" data-da=".top-bestsellers__body--3,767.98">
+										<div class="rating">
+											<div class="rating__stars">
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+											</div>
+											<p class="rating__text">244 <span>reviews</span></p>
+										</div>
+										<a class="item-bestsellers__title" href="#">Apple MacBook Pro</a>
+										<p class="item-bestsellers__text points">Refurbished, A1502 ME864LL/<span> </span>A - Retina Late</p>
+									</div>
+									<p class="item-bestsellers__info">Ends in: 06:12:24</p>
+									<p class="item-bestsellers__price item-bestsellers__price--3">
+										<span class="item-bestsellers__actual">AED 580.00</span>
+										<span class="item-bestsellers__old">AED 670.00</span>
+									</p>
+									<div class="item-bestsellers__btns">
+										<a class="item-bestsellers__more" href="#">Learn More</a>
+										<div class="details">
+											<button class="heart _icon-heart" data-da=".item-bestsellers__price--3,991.98"></button>
+											<a class="item-bestsellers__title" href="#">Apple MacBook Pro</a>
+											<p class="item-bestsellers__text points">Refurbished, A1502 ME864LL/<span> </span>A - Retina Late</p>
+											<div class="characteristics">
+												<p class="characteristics__info _icon-processor">
+													Processor:
+													<span>i5-5257U</span>
+												</p>
+												<p class="characteristics__info _icon-os">
+													OS:
+													<span>MAC OS</span>
+												</p>
+												<p class="characteristics__info _icon-ram">
+													RAM:
+													<span>8GB</span>
+												</p>
+												<p class="characteristics__info _icon-disk">
+													Hard Disk:
+													<span>256GB SSD</span>
+												</p>
+												<p class="characteristics__info _icon-gpu">
+													GPU:
+													<span class="points">Intel Iris 6100 graphics</span>
+												</p>
+											</div>
+											<p class="item-bestsellers__info">Ends in: 06:12:24</p>
+											<p class="item-bestsellers__price">
+												<span class="item-bestsellers__actual">AED 580.00</span>
+												<span class="item-bestsellers__old">AED 670.00</span>
+											</p>
+										</div>
+										<a class="item-bestsellers__buy _icon-cart" href="#"></a>
+									</div>
+								</div>
+								<div class="bestsellers__item item-bestsellers">
+									<div class="item-bestsellers__top top-bestsellers">
+										<div class="top-bestsellers__body top-bestsellers__body--4">
+											<div class="top-bestsellers__category">
+												<p class="top-bestsellers__discount">-13% OFF</p>
+												<p class="top-bestsellers__name">Bestseller</p>
+											</div>
+										</div>
+										<a class="item-bestsellers__picture" href="#">
+											<picture><source srcset="img/bestsellers/item-3.webp" type="image/webp"><img src="img/bestsellers/item-3.jpg" alt="Apple MacBook Pro"></picture>
+										</a>
+									</div>
+									<div class="item-bestsellers__box" data-da=".top-bestsellers__body--4,767.98">
+										<div class="rating">
+											<div class="rating__stars">
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+											</div>
+											<p class="rating__text">244 <span>reviews</span></p>
+										</div>
+										<a class="item-bestsellers__title" href="#">Apple MacBook Pro</a>
+										<p class="item-bestsellers__text points">Refurbished, A1502 ME864LL/<span> </span>A - Retina Late</p>
+									</div>
+									<p class="item-bestsellers__info">Ends in: 06:12:24</p>
+									<p class="item-bestsellers__price item-bestsellers__price--4">
+										<span class="item-bestsellers__actual">AED 580.00</span>
+										<span class="item-bestsellers__old">AED 670.00</span>
+									</p>
+									<div class="item-bestsellers__btns">
+										<a class="item-bestsellers__more" href="#">Learn More</a>
+										<div class="details">
+											<button class="heart _icon-heart" data-da=".item-bestsellers__price--4,991.98"></button>
+											<a class="item-bestsellers__title" href="#">Apple MacBook Pro</a>
+											<p class="item-bestsellers__text points">Refurbished, A1502 ME864LL/<span> </span>A - Retina Late</p>
+											<div class="characteristics">
+												<p class="characteristics__info _icon-processor">
+													Processor:
+													<span>i5-5257U</span>
+												</p>
+												<p class="characteristics__info _icon-os">
+													OS:
+													<span>MAC OS</span>
+												</p>
+												<p class="characteristics__info _icon-ram">
+													RAM:
+													<span>8GB</span>
+												</p>
+												<p class="characteristics__info _icon-disk">
+													Hard Disk:
+													<span>256GB SSD</span>
+												</p>
+												<p class="characteristics__info _icon-gpu">
+													GPU:
+													<span class="points">Intel Iris 6100 graphics</span>
+												</p>
+											</div>
+											<p class="item-bestsellers__info">Ends in: 06:12:24</p>
+											<p class="item-bestsellers__price">
+												<span class="item-bestsellers__actual">AED 580.00</span>
+												<span class="item-bestsellers__old">AED 670.00</span>
+											</p>
+										</div>
+										<a class="item-bestsellers__buy _icon-cart" href="#"></a>
+									</div>
+								</div>
+								<div class="bestsellers__item item-bestsellers">
+									<div class="item-bestsellers__top top-bestsellers">
+										<div class="top-bestsellers__body top-bestsellers__body--5">
+											<div class="top-bestsellers__category">
+												<p class="top-bestsellers__discount">-13% OFF</p>
+												<p class="top-bestsellers__name">Bestseller</p>
+											</div>
+										</div>
+										<a class="item-bestsellers__picture" href="#">
+											<picture><source srcset="img/bestsellers/item-2.webp" type="image/webp"><img src="img/bestsellers/item-2.jpg" alt="Apple MacBook Pro"></picture>
+										</a>
+									</div>
+									<div class="item-bestsellers__box" data-da=".top-bestsellers__body--5,767.98">
+										<div class="rating">
+											<div class="rating__stars">
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+											</div>
+											<p class="rating__text">244 <span>reviews</span></p>
+										</div>
+										<a class="item-bestsellers__title" href="#">Apple MacBook Pro</a>
+										<p class="item-bestsellers__text points">Refurbished, A1502 ME864LL/<span> </span>A - Retina Late</p>
+									</div>
+									<p class="item-bestsellers__info">Ends in: 06:12:24</p>
+									<p class="item-bestsellers__price item-bestsellers__price--5">
+										<span class="item-bestsellers__actual">AED 580.00</span>
+										<span class="item-bestsellers__old">AED 670.00</span>
+									</p>
+									<div class="item-bestsellers__btns">
+										<a class="item-bestsellers__more" href="#">Learn More</a>
+										<div class="details">
+											<button class="heart _icon-heart" data-da=".item-bestsellers__price--5,991.98"></button>
+											<a class="item-bestsellers__title" href="#">Apple MacBook Pro</a>
+											<p class="item-bestsellers__text points">Refurbished, A1502 ME864LL/<span> </span>A - Retina Late</p>
+											<div class="characteristics">
+												<p class="characteristics__info _icon-processor">
+													Processor:
+													<span>i5-5257U</span>
+												</p>
+												<p class="characteristics__info _icon-os">
+													OS:
+													<span>MAC OS</span>
+												</p>
+												<p class="characteristics__info _icon-ram">
+													RAM:
+													<span>8GB</span>
+												</p>
+												<p class="characteristics__info _icon-disk">
+													Hard Disk:
+													<span>256GB SSD</span>
+												</p>
+												<p class="characteristics__info _icon-gpu">
+													GPU:
+													<span class="points">Intel Iris 6100 graphics</span>
+												</p>
+											</div>
+											<p class="item-bestsellers__info">Ends in: 06:12:24</p>
+											<p class="item-bestsellers__price">
+												<span class="item-bestsellers__actual">AED 580.00</span>
+												<span class="item-bestsellers__old">AED 670.00</span>
+											</p>
+										</div>
+										<a class="item-bestsellers__buy _icon-cart" href="#"></a>
+									</div>
+								</div>
+								<div class="bestsellers__item item-bestsellers">
+									<div class="item-bestsellers__top top-bestsellers">
+										<div class="top-bestsellers__body top-bestsellers__body--6">
+											<div class="top-bestsellers__category">
+												<p class="top-bestsellers__discount">-13% OFF</p>
+												<p class="top-bestsellers__name">Bestseller</p>
+											</div>
+										</div>
+										<a class="item-bestsellers__picture" href="#">
+											<picture><source srcset="img/bestsellers/item-1.webp" type="image/webp"><img src="img/bestsellers/item-1.jpg" alt="Apple MacBook Pro"></picture>
+										</a>
+									</div>
+									<div class="item-bestsellers__box" data-da=".top-bestsellers__body--6,767.98">
+										<div class="rating">
+											<div class="rating__stars">
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+												<div class="rating__star _icon-star-rating"></div>
+											</div>
+											<p class="rating__text">244 <span>reviews</span></p>
+										</div>
+										<a class="item-bestsellers__title" href="#">Apple MacBook Pro</a>
+										<p class="item-bestsellers__text points">Refurbished, A1502 ME864LL/<span> </span>A - Retina Late</p>
+									</div>
+									<p class="item-bestsellers__info">Ends in: 06:12:24</p>
+									<p class="item-bestsellers__price item-bestsellers__price--6">
+										<span class="item-bestsellers__actual">AED 580.00</span>
+										<span class="item-bestsellers__old">AED 670.00</span>
+									</p>
+									<div class="item-bestsellers__btns">
+										<a class="item-bestsellers__more" href="#">Learn More</a>
+										<div class="details">
+											<button class="heart _icon-heart" data-da=".item-bestsellers__price--6,991.98"></button>
+											<a class="item-bestsellers__title" href="#">Apple MacBook Pro</a>
+											<p class="item-bestsellers__text points">Refurbished, A1502 ME864LL/<span> </span>A - Retina Late</p>
+											<div class="characteristics">
+												<p class="characteristics__info _icon-processor">
+													Processor:
+													<span>i5-5257U</span>
+												</p>
+												<p class="characteristics__info _icon-os">
+													OS:
+													<span>MAC OS</span>
+												</p>
+												<p class="characteristics__info _icon-ram">
+													RAM:
+													<span>8GB</span>
+												</p>
+												<p class="characteristics__info _icon-disk">
+													Hard Disk:
+													<span>256GB SSD</span>
+												</p>
+												<p class="characteristics__info _icon-gpu">
+													GPU:
+													<span class="points">Intel Iris 6100 graphics</span>
+												</p>
+											</div>
+											<p class="item-bestsellers__info">Ends in: 06:12:24</p>
+											<p class="item-bestsellers__price">
+												<span class="item-bestsellers__actual">AED 580.00</span>
+												<span class="item-bestsellers__old">AED 670.00</span>
+											</p>
+										</div>
+										<a class="item-bestsellers__buy _icon-cart" href="#"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
         <section class="about-rebox">
           <div class="container">
             <div class="about-rebox__inner">
@@ -215,7 +647,7 @@
             </div>
           </div>
         </section>
-        <!-- recommended -->
+				<!-- categories -->
         <section class="reviews">
           <div class="container">
             <div class="reviews__inner">
@@ -376,7 +808,9 @@
             </div>
           </div>
         </section>
-
+				<!-- home-recomended -->
+				<!-- preloved -->
+				<!-- faq -->
         <section class="blog">
           <div class="container">
             <div class="blog__inner">
@@ -531,101 +965,101 @@
                 <p class="products__subtitle">Huge selection of products, in stock, and ready to go</p>
               </div>
               <div class="sitemap__content content-sitemap">
-              <div class="content-sitemap__column">
-                <h4 class="content-sitemap__title title-4">Brands</h4>
-                <ul class="content-sitemap__list">
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Brands</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Dell</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">HP</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Lenovo</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Acer</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Toshiba</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="content-sitemap__column">
-                <h4 class="content-sitemap__title title-4">Apple</h4>
-                <ul class="content-sitemap__list">
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Macbook Air</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Macbook Pro</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">IPad</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="content-sitemap__column">
-                <h4 class="content-sitemap__title title-4">Laptops</h4>
-                <ul class="content-sitemap__list">
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Apple laptops</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Dell laptops</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">HP laptops</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Lenovo laptops</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Acer laptops</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Toshiba laptops</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="content-sitemap__column">
-                <h4 class="content-sitemap__title title-4">Chromebooks</h4>
-                <ul class="content-sitemap__list">
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">HP<span> сhromebooks</span></a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Acer<span> сhromebooks</span></a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Samsung<span> сhromebooks</span></a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Lenovo<span> сhromebooks</span></a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Dell<span> сhromebooks</span></a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Toshiba<span> сhromebooks</span></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="content-sitemap__column">
-                <h4 class="content-sitemap__title title-4">Desktop Computers</h4>
-                <ul class="content-sitemap__list">
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">Dell computers</a>
-                  </li>
-                  <li class="content-sitemap__item">
-                    <a class="content-sitemap__link" href="#">HP computers</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+								<div class="content-sitemap__column">
+									<h4 class="content-sitemap__title title-4">Brands</h4>
+									<ul class="content-sitemap__list">
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Brands</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Dell</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">HP</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Lenovo</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Acer</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Toshiba</a>
+										</li>
+									</ul>
+								</div>
+								<div class="content-sitemap__column">
+									<h4 class="content-sitemap__title title-4">Apple</h4>
+									<ul class="content-sitemap__list">
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Macbook Air</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Macbook Pro</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">IPad</a>
+										</li>
+									</ul>
+								</div>
+								<div class="content-sitemap__column">
+									<h4 class="content-sitemap__title title-4">Laptops</h4>
+									<ul class="content-sitemap__list">
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Apple laptops</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Dell laptops</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">HP laptops</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Lenovo laptops</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Acer laptops</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Toshiba laptops</a>
+										</li>
+									</ul>
+								</div>
+								<div class="content-sitemap__column">
+									<h4 class="content-sitemap__title title-4">Chromebooks</h4>
+									<ul class="content-sitemap__list">
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">HP<span> сhromebooks</span></a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Acer<span> сhromebooks</span></a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Samsung<span> сhromebooks</span></a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Lenovo<span> сhromebooks</span></a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Dell<span> сhromebooks</span></a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Toshiba<span> сhromebooks</span></a>
+										</li>
+									</ul>
+								</div>
+								<div class="content-sitemap__column">
+									<h4 class="content-sitemap__title title-4">Desktop Computers</h4>
+									<ul class="content-sitemap__list">
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">Dell computers</a>
+										</li>
+										<li class="content-sitemap__item">
+											<a class="content-sitemap__link" href="#">HP computers</a>
+										</li>
+									</ul>
+								</div>
+							</div>
             </div>
           </div>
         </section>
@@ -843,8 +1277,8 @@
 			</footer>
     </div>
     
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js?_v=20221120144239"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?_v=20221120144239"></script>
-    <script src="js/app.min.js?_v=20221120144239"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js?_v=20221124211341"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?_v=20221124211341"></script>
+    <script src="js/app.min.js?_v=20221124211341"></script>
   </body>
 </html>
