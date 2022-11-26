@@ -1129,6 +1129,8 @@ html {
 }
 
 .slick-initialized .item-banners {
+  display: block;
+  width: 100%;
   padding: 1.25rem 0;
   height: 22.5rem;
   overflow: hidden;
@@ -1142,13 +1144,11 @@ html {
 .item-banners__three,
 .item-banners__four,
 .item-banners__five {
-  position: absolute;
-  left: 0;
-  right: 0;
   display: flex;
   position: relative;
   overflow: hidden;
   height: 100%;
+  width: 100%;
   max-height: 20rem;
   border-radius: 0.5rem;
 }
@@ -3300,10 +3300,6 @@ html {
     font-size: 0.8125rem;
   }
 
-  .banners__slider .slick-btn {
-    display: none;
-  }
-
   .item-banners__one > .item-banners__info {
     max-width: 11.875rem;
   }
@@ -3642,7 +3638,8 @@ html {
   }
 
   .item-banners__one {
-    background: #ff6f42;
+    background: none;
+    background-color: #ff6f42;
   }
 
   .item-banners__one > .item-banners__info {
@@ -3650,7 +3647,8 @@ html {
   }
 
   .item-banners__two {
-    background: #3c9de3;
+    background: none;
+    background-color: #3c9de3;
   }
 
   .item-banners__two > .item-banners__info {
@@ -3658,7 +3656,8 @@ html {
   }
 
   .item-banners__three {
-    background: #2bc9ab;
+    background: none;
+    background-color: #2bc9ab;
   }
 
   .item-banners__three::after {
@@ -3677,7 +3676,8 @@ html {
   }
 
   .item-banners__four {
-    background: #f66e7d;
+    background: none;
+    background-color: #f66e7d;
   }
 
   .item-banners__four::after {
@@ -3696,7 +3696,8 @@ html {
   }
 
   .item-banners__five {
-    background: #2ad58e;
+    background: none;
+    background-color: #2ad58e;
   }
 
   .item-banners__five::after {
