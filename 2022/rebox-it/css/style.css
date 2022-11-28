@@ -842,7 +842,7 @@ html {
   width: 1.875rem;
   border-radius: 0.25rem 0.25rem 50% 50%;
   margin-right: 0.4375rem;
-  font-size: 0.6875rem;
+  font-size: 0.625rem;
   transition: all 0.3s ease 0s;
 }
 
@@ -1422,6 +1422,72 @@ html {
 .slick-active .item-banners__laptop-mac {
   visibility: visible;
   right: 11.875rem;
+}
+
+.category-banners__inner {
+  display: grid;
+  grid-template: 1fr/repeat(6, 1fr);
+  gap: 1.5rem;
+}
+
+.category-banners__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.category-banners__link span {
+  font-weight: 500;
+  line-height: 1.4117647059;
+  color: #707070;
+  transition: color 0.3s ease 0s;
+}
+
+.category-banners__icon,
+.category-banners__chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9375rem 0.625rem;
+  width: 100%;
+  min-height: 4.5625rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(235, 235, 237, 0.2);
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+}
+
+.category-banners__icon {
+  background-color: #fff;
+}
+
+.category-banners__icon._icon-apple::before,
+.category-banners__icon._icon-hp::before {
+  font-size: 2.5625rem;
+}
+
+.category-banners__icon._icon-dell {
+  font-size: 1.5625rem;
+}
+
+.category-banners__icon._icon-lenovo,
+.category-banners__icon._icon-acer {
+  font-size: 1.3125rem;
+}
+
+.category-banners__chat {
+  background-color: #ff6f42;
+  color: #fff;
+  gap: 0.625rem;
+  font-size: 1.625rem;
+}
+
+.category-banners__chat span {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: #fff;
 }
 
 /* </banners> ========== */
@@ -2388,7 +2454,7 @@ html {
 
 .category-footer {
   display: grid;
-  grid-template: 4.5625rem/repeat(6, 1fr);
+  grid-template: 1fr/repeat(6, 1fr);
   gap: 1.5rem;
 }
 
@@ -2422,7 +2488,7 @@ html {
   gap: 0.625rem;
   background: #ff6f42;
   box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
 }
 
 .category-footer__chat span {
@@ -2756,6 +2822,10 @@ html {
     right: calc(-10px + 200 * (100vw / 1280));
   }
 
+  .category-banners__link > span {
+    display: none;
+  }
+
   .bestsellers__slider .slick-btn {
     left: calc(50vw - 1.75rem);
   }
@@ -2930,6 +3000,29 @@ html {
 }
 
 @media (max-width: 70.62375em) {
+  .category-banners__inner {
+    gap: 1rem;
+  }
+
+  .category-banners__icon._icon-apple::before,
+  .category-banners__icon._icon-hp::before {
+    font-size: 2.1875rem;
+  }
+
+  .category-banners__icon._icon-dell {
+    font-size: 1.375rem;
+  }
+
+  .category-banners__icon._icon-lenovo,
+  .category-banners__icon._icon-acer {
+    font-size: 1.25rem;
+  }
+
+  .category-banners__chat {
+    font-size: 1.3125rem;
+    gap: 0.4375rem;
+  }
+
   .category-footer {
     gap: 1rem;
     grid-template-rows: 4.0625rem;
@@ -2963,6 +3056,38 @@ html {
   .menu-top-header__link {
     font-size: 1.0625rem;
     padding: 0.875rem 0.9375rem;
+  }
+}
+
+@media (max-width: 64.68625em) {
+  .category-banners__inner {
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+  }
+
+  .category-footer {
+    grid-template: repeat(2, 3.75rem)/repeat(3, 1fr);
+  }
+
+  .trustpilot-footer {
+    align-items: end;
+  }
+
+  .trustpilot-footer__item {
+    align-items: end;
+  }
+
+  .trustpilot-footer__logo {
+    font-size: 1.3125rem;
+  }
+
+  .trustpilot-footer__logo img {
+    width: 1.988125rem;
+    height: 1.89rem;
+  }
+
+  .trustpilot-footer__info {
+    flex-direction: column-reverse;
+    gap: 0.375rem;
   }
 }
 
@@ -3000,34 +3125,6 @@ html {
 
   .item-blog__date {
     font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 64.68625em) {
-  .category-footer {
-    grid-template: repeat(2, 3.75rem)/repeat(3, 1fr);
-  }
-
-  .trustpilot-footer {
-    align-items: end;
-  }
-
-  .trustpilot-footer__item {
-    align-items: end;
-  }
-
-  .trustpilot-footer__logo {
-    font-size: 1.3125rem;
-  }
-
-  .trustpilot-footer__logo img {
-    width: 1.988125rem;
-    height: 1.89rem;
-  }
-
-  .trustpilot-footer__info {
-    flex-direction: column-reverse;
-    gap: 0.375rem;
   }
 }
 
@@ -3985,23 +4082,29 @@ html {
   }
 }
 
-@media (max-width: 34.99875em) {
-  .about-rebox__body {
-    padding: 1.875rem 1.25rem;
-  }
-
-  .about-rebox__btn {
-    align-self: stretch;
-    text-align: center;
-  }
-
-  .about-rebox__box {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-}
-
 @media (max-width: 34.37375em) {
+  .category-banners__inner {
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+  }
+
+  .category-banners__icon._icon-apple::before,
+  .category-banners__icon._icon-hp::before {
+    font-size: 2.125rem;
+  }
+
+  .category-banners__icon._icon-dell {
+    font-size: 1.1875rem;
+  }
+
+  .category-banners__icon._icon-lenovo,
+  .category-banners__icon._icon-acer {
+    font-size: 1.125rem;
+  }
+
+  .category-banners__chat span {
+    font-size: 1.0625rem;
+  }
+
   .category-footer {
     grid-template: repeat(3, 3.75rem)/repeat(2, 1fr);
   }
@@ -4016,6 +4119,22 @@ html {
 
   .category-footer__chat span {
     font-size: 1.0625rem;
+  }
+}
+
+@media (max-width: 34.99875em) {
+  .about-rebox__body {
+    padding: 1.875rem 1.25rem;
+  }
+
+  .about-rebox__btn {
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .about-rebox__box {
+    flex-direction: column;
+    gap: 0.75rem;
   }
 }
 
@@ -4326,6 +4445,19 @@ html {
   .item-banners__link:hover {
     background-color: #fff;
     color: #000;
+  }
+
+  .category-banners__link:hover > span {
+    color: #171717;
+  }
+
+  .category-banners__link:hover .category-banners__icon {
+    background-color: #ff6f42;
+    color: #fff;
+  }
+
+  .category-banners__link:hover .category-banners__chat {
+    background-color: #171717;
   }
 
   .item-bestsellers__picture img:hover {
