@@ -1424,28 +1424,28 @@ html {
   right: 11.875rem;
 }
 
-.category-banners__inner {
+.brands-banners__inner {
   display: grid;
   grid-template: 1fr/repeat(6, 1fr);
   gap: 1.5rem;
 }
 
-.category-banners__link {
+.brands-banners__link {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
 }
 
-.category-banners__link span {
+.brands-banners__link span {
   font-weight: 500;
   line-height: 1.4117647059;
   color: #707070;
   transition: color 0.3s ease 0s;
 }
 
-.category-banners__icon,
-.category-banners__chat {
+.brands-banners__icon,
+.brands-banners__chat {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1457,32 +1457,32 @@ html {
   transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
 }
 
-.category-banners__icon {
+.brands-banners__icon {
   background-color: #fff;
 }
 
-.category-banners__icon._icon-apple::before,
-.category-banners__icon._icon-hp::before {
+.brands-banners__icon._icon-apple::before,
+.brands-banners__icon._icon-hp::before {
   font-size: 2.5625rem;
 }
 
-.category-banners__icon._icon-dell {
+.brands-banners__icon._icon-dell {
   font-size: 1.5625rem;
 }
 
-.category-banners__icon._icon-lenovo,
-.category-banners__icon._icon-acer {
+.brands-banners__icon._icon-lenovo,
+.brands-banners__icon._icon-acer {
   font-size: 1.3125rem;
 }
 
-.category-banners__chat {
+.brands-banners__chat {
   background-color: #ff6f42;
   color: #fff;
   gap: 0.625rem;
   font-size: 1.625rem;
 }
 
-.category-banners__chat span {
+.brands-banners__chat span {
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.3;
@@ -1532,13 +1532,14 @@ html {
   justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
+  opacity: 0.9;
+  transition: scale 0.3s ease 0s, opacity 0.3s ease 0s;
 }
 
 .item-bestsellers__picture img {
   max-width: 13.875rem;
   max-height: 8rem;
   width: 100%;
-  transition: scale 0.3s ease 0s;
 }
 
 .item-bestsellers__title {
@@ -1859,6 +1860,149 @@ html {
 
 /* </about> ========== */
 
+/* <categories> ========== */
+
+.categories__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.categories__items {
+  width: 100%;
+}
+
+.categories__items .slick-track {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.categories__items .slick-track::after,
+.categories__items .slick-track::before {
+  display: none;
+}
+
+.item-categories {
+  position: relative;
+}
+
+.slick-initialized .item-categories {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0.75rem 1.5rem rgba(235, 235, 237, 0.2);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.slick-initialized .item-categories:first-child {
+  grid-row: span 2;
+  padding: 2.5rem 2.5rem 42.96875%;
+}
+
+.slick-initialized .item-categories:first-child .item-categories__content {
+  gap: 1rem;
+}
+
+.slick-initialized .item-categories:first-child .item-categories__text {
+  font-weight: 500;
+  font-size: 1.0625rem;
+  line-height: 1.4117647059;
+  width: 100%;
+}
+
+.slick-initialized .item-categories:first-child .item-categories__btn {
+  padding: 0.6875rem 2rem;
+  margin-top: 1.25rem;
+}
+
+.item-categories__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.item-categories__title {
+  font-weight: 600;
+  font-size: 1.3125rem;
+  line-height: 1.2857142857;
+  letter-spacing: -0.01em;
+  width: -moz-max-content;
+  width: max-content;
+  transition: color 0.3s ease 0s;
+}
+
+.item-categories__text {
+  font-size: 1rem;
+  line-height: 1.375;
+  color: #707070;
+  width: 65.625%;
+}
+
+.item-categories__btn {
+  display: flex;
+  font-weight: 600;
+  font-size: 1rem;
+  width: -moz-max-content;
+  width: max-content;
+  line-height: 1.3125;
+  letter-spacing: 0.01em;
+  text-align: center;
+  padding: 0.5625rem 1.5rem;
+  border: 0.0625rem solid #d8dfe9;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+  transition: color 0.3s ease 0s, background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+}
+
+.item-categories__picture {
+  position: absolute;
+  opacity: 0.9;
+  transition: scale 0.3s ease 0s, opacity 0.3s ease 0s;
+}
+
+.item-categories__picture img {
+  width: 100%;
+}
+
+.item-categories__apple {
+  top: 16.5625rem;
+  width: 76.5625%;
+  left: 50%;
+  translate: -50% 0;
+}
+
+.item-categories__laptop {
+  left: 62.2395833333%;
+  top: 1.625rem;
+  width: 14.9375rem;
+}
+
+.item-categories__chrome {
+  top: 2.4375rem;
+  left: 57.03125%;
+  width: 14.625rem;
+}
+
+.item-categories__tablet {
+  top: 1.8125rem;
+  left: 67.1875%;
+  width: 10.1875rem;
+}
+
+.item-categories__desktop {
+  top: 1.3125rem;
+  left: 70.8333333333%;
+  width: 5.5625rem;
+}
+
+/* </categories> ========== */
+
 /* <reviews> ========== */
 
 .reviews__inner {
@@ -2075,7 +2219,6 @@ html {
 }
 
 .slick-initialized .item-blog {
-  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -2102,7 +2245,8 @@ html {
 .item-blog__image img {
   max-width: 100%;
   width: 100%;
-  transition: scale 0.3s ease-in 0s;
+  opacity: 0.9;
+  transition: scale 0.3s ease-in 0s, opacity 0.3s ease-in 0s;
 }
 
 .item-blog__info {
@@ -2452,15 +2596,15 @@ html {
   font-size: 1rem;
 }
 
-.category-footer {
+.brands-footer {
   display: grid;
   grid-template: 1fr/repeat(6, 1fr);
   gap: 1.5rem;
 }
 
-.category-footer__icon,
-.category-footer__link,
-.category-footer__chat {
+.brands-footer__icon,
+.brands-footer__link,
+.brands-footer__chat {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2468,22 +2612,22 @@ html {
   border-radius: 0.5rem;
 }
 
-.category-footer__icon,
-.category-footer__link {
+.brands-footer__icon,
+.brands-footer__link {
   background-color: #1b1b1b;
   box-shadow: 0 0.375rem 0.5625rem rgba(0, 0, 0, 0.15);
   transition: background-color 0.3s ease 0s;
 }
 
-.category-footer__icon {
+.brands-footer__icon {
   font-size: 2.5625rem;
 }
 
-.category-footer__link {
+.brands-footer__link {
   font-size: 1.5625rem;
 }
 
-.category-footer__chat {
+.brands-footer__chat {
   font-size: 1.625rem;
   gap: 0.625rem;
   background: #ff6f42;
@@ -2491,7 +2635,7 @@ html {
   transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
 }
 
-.category-footer__chat span {
+.brands-footer__chat span {
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: -0.01em;
@@ -2673,19 +2817,19 @@ html {
 
 @media (min-width: 37.5em) {
   .no-webp .item-banners__one {
-    background: url("../img/home/banners/banner-1/bg.png") center/cover no-repeat; }
+    background: url(../img/home/banners/banner-1/bg.png) center/cover no-repeat; }
 
   .no-webp .item-banners__two {
-    background: url("../img/home/banners/banner-2/bg.png") center/cover no-repeat; }
+    background: url(../img/home/banners/banner-2/bg.png) center/cover no-repeat; }
 
   .no-webp .item-banners__three {
-    background: url("../img/home/banners/banner-3/bg.png") center/cover no-repeat; }
+    background: url(../img/home/banners/banner-3/bg.png) center/cover no-repeat; }
 
   .no-webp .item-banners__four {
-    background: url("../img/home/banners/banner-4/bg.png") center/cover no-repeat; }
+    background: url(../img/home/banners/banner-4/bg.png) center/cover no-repeat; }
 
   .no-webp .item-banners__five {
-    background: url("../img/home/banners/banner-5/bg.png") center/cover no-repeat; }
+    background: url(../img/home/banners/banner-5/bg.png) center/cover no-repeat; }
 }
 
 @media (min-width: 48em) {
@@ -2822,7 +2966,7 @@ html {
     right: calc(-10px + 200 * (100vw / 1280));
   }
 
-  .category-banners__link > span {
+  .brands-banners__link > span {
     display: none;
   }
 
@@ -3000,43 +3144,43 @@ html {
 }
 
 @media (max-width: 70.62375em) {
-  .category-banners__inner {
+  .brands-banners__inner {
     gap: 1rem;
   }
 
-  .category-banners__icon._icon-apple::before,
-  .category-banners__icon._icon-hp::before {
+  .brands-banners__icon._icon-apple::before,
+  .brands-banners__icon._icon-hp::before {
     font-size: 2.1875rem;
   }
 
-  .category-banners__icon._icon-dell {
+  .brands-banners__icon._icon-dell {
     font-size: 1.375rem;
   }
 
-  .category-banners__icon._icon-lenovo,
-  .category-banners__icon._icon-acer {
+  .brands-banners__icon._icon-lenovo,
+  .brands-banners__icon._icon-acer {
     font-size: 1.25rem;
   }
 
-  .category-banners__chat {
+  .brands-banners__chat {
     font-size: 1.3125rem;
     gap: 0.4375rem;
   }
 
-  .category-footer {
+  .brands-footer {
     gap: 1rem;
     grid-template-rows: 4.0625rem;
   }
 
-  .category-footer__icon {
+  .brands-footer__icon {
     font-size: 2.1875rem;
   }
 
-  .category-footer__link {
+  .brands-footer__link {
     font-size: 1.25rem;
   }
 
-  .category-footer__chat {
+  .brands-footer__chat {
     font-size: 1.3125rem;
     gap: 0.4375rem;
   }
@@ -3057,14 +3201,81 @@ html {
     font-size: 1.0625rem;
     padding: 0.875rem 0.9375rem;
   }
+
+  .categories__items .slick-track {
+    grid-template: 13rem repeat(2, 1fr)/repeat(2, 1fr);
+  }
+
+  .slick-initialized .item-categories:first-child {
+    padding: 2rem;
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .slick-initialized .item-categories:first-child .item-categories__content {
+    gap: 0.75rem;
+  }
+
+  .slick-initialized .item-categories:first-child .item-categories__text {
+    width: 16.875rem;
+    font-size: 0.875rem;
+    line-height: 1.4285714286;
+  }
+
+  .slick-initialized .item-categories:first-child .item-categories__btn {
+    margin-top: 0.5rem;
+    padding: 0.6875rem 2.5625rem;
+  }
+
+  .item-categories__content {
+    gap: 0.75rem;
+  }
+
+  .item-categories__title {
+    font-size: 1.125rem;
+  }
+
+  .item-categories__text {
+    font-size: 0.875rem;
+    width: 67.4418604651%;
+  }
+
+  .item-categories__apple {
+    top: 2.1875rem;
+    left: auto;
+    right: 2.5625rem;
+    translate: 0 0;
+    width: 20.0625rem;
+  }
+
+  .item-categories__laptop {
+    top: 2.875rem;
+    left: 65.4761904762%;
+    width: 13.25rem;
+  }
+
+  .item-categories__chrome {
+    top: 2.1875rem;
+    left: 65.1785714286%;
+  }
+
+  .item-categories__tablet {
+    top: 2.1875rem;
+    left: 72.9166666667%;
+  }
+
+  .item-categories__desktop {
+    top: 2rem;
+    left: 73.5119047619%;
+  }
 }
 
 @media (max-width: 64.68625em) {
-  .category-banners__inner {
+  .brands-banners__inner {
     grid-template: repeat(2, 1fr)/repeat(3, 1fr);
   }
 
-  .category-footer {
+  .brands-footer {
     grid-template: repeat(2, 3.75rem)/repeat(3, 1fr);
   }
 
@@ -3216,6 +3427,10 @@ html {
     margin: 0 0.375rem;
   }
 
+  .item-bestsellers__picture {
+    opacity: 1;
+  }
+
   .heart {
     right: 1.25rem;
     top: 13.75rem;
@@ -3255,6 +3470,10 @@ html {
          column-gap: 1.25rem;
   }
 
+  .item-categories__picture {
+    opacity: 1;
+  }
+
   .blog__slider {
     max-width: 39.375rem;
     margin: 0 -0.46875rem;
@@ -3266,6 +3485,7 @@ html {
 
   .item-blog__image img {
     max-height: 10.875rem;
+    opacity: 1;
   }
 
   .products {
@@ -3680,6 +3900,81 @@ html {
     font-size: 0.75rem;
   }
 
+  .categories__items {
+    margin: 0 -0.375rem;
+    width: 36rem;
+  }
+
+  .categories__items .slick-track {
+    display: flex;
+    max-width: 11.25rem;
+    height: 12.5rem;
+    gap: 0;
+  }
+
+  .item-categories {
+    margin: 0 0.375rem;
+  }
+
+  .slick-initialized .item-categories {
+    padding: 1rem;
+    max-width: 8.3125rem;
+  }
+
+  .slick-initialized .item-categories:first-child {
+    grid-column: 1;
+    padding: 1rem;
+  }
+
+  .item-categories__content {
+    max-width: 8.3125rem;
+  }
+
+  .item-categories__title {
+    max-width: 100%;
+  }
+
+  .item-categories__text {
+    display: none;
+  }
+
+  .item-categories__btn {
+    display: none;
+  }
+
+  .item-categories__apple {
+    top: 4.4375rem;
+    right: auto;
+    left: 1.125rem;
+    width: 9.875rem;
+  }
+
+  .item-categories__laptop {
+    top: 4.4375rem;
+    right: auto;
+    left: -0.375rem;
+    width: 11.1875rem;
+  }
+
+  .item-categories__chrome {
+    top: 4.4375rem;
+    left: -0.25rem;
+    width: 11.625rem;
+  }
+
+  .item-categories__tablet {
+    top: 4.4375rem;
+    left: 25%;
+    width: 7.5rem;
+  }
+
+  .item-categories__desktop {
+    top: 4.4375rem;
+    left: 50%;
+    translate: -50% 0;
+    width: 4.0625rem;
+  }
+
   .reviews__inner {
     gap: 2rem;
   }
@@ -4073,6 +4368,10 @@ html {
     left: 45.833vw;
   }
 
+  .categories__items {
+    width: 24rem;
+  }
+
   .reviews__slider {
     max-width: calc(100% - 1.25rem);
   }
@@ -4083,41 +4382,41 @@ html {
 }
 
 @media (max-width: 34.37375em) {
-  .category-banners__inner {
+  .brands-banners__inner {
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
   }
 
-  .category-banners__icon._icon-apple::before,
-  .category-banners__icon._icon-hp::before {
+  .brands-banners__icon._icon-apple::before,
+  .brands-banners__icon._icon-hp::before {
     font-size: 2.125rem;
   }
 
-  .category-banners__icon._icon-dell {
+  .brands-banners__icon._icon-dell {
     font-size: 1.1875rem;
   }
 
-  .category-banners__icon._icon-lenovo,
-  .category-banners__icon._icon-acer {
+  .brands-banners__icon._icon-lenovo,
+  .brands-banners__icon._icon-acer {
     font-size: 1.125rem;
   }
 
-  .category-banners__chat span {
+  .brands-banners__chat span {
     font-size: 1.0625rem;
   }
 
-  .category-footer {
+  .brands-footer {
     grid-template: repeat(3, 3.75rem)/repeat(2, 1fr);
   }
 
-  .category-footer__icon {
+  .brands-footer__icon {
     font-size: 2.125rem;
   }
 
-  .category-footer__link {
+  .brands-footer__link {
     font-size: 1.125rem;
   }
 
-  .category-footer__chat span {
+  .brands-footer__chat span {
     font-size: 1.0625rem;
   }
 }
@@ -4277,6 +4576,14 @@ html {
     font-size: 0.875rem;
   }
 
+  .categories__items {
+    width: 18.125rem;
+  }
+
+  .categories__items .slick-track {
+    max-width: 8.3125rem;
+  }
+
   .reviews__profile span {
     display: none;
   }
@@ -4366,6 +4673,12 @@ html {
   }
 }
 
+@media (max-width: 22.49875em) {
+  .categories__items {
+    width: 9.0625rem;
+  }
+}
+
 @media (any-hover: hover) {
   .slick-btn:hover {
     background-color: #ff6f42;
@@ -4447,21 +4760,22 @@ html {
     color: #000;
   }
 
-  .category-banners__link:hover > span {
+  .brands-banners__link:hover > span {
     color: #171717;
   }
 
-  .category-banners__link:hover .category-banners__icon {
+  .brands-banners__link:hover .brands-banners__icon {
     background-color: #ff6f42;
     color: #fff;
   }
 
-  .category-banners__link:hover .category-banners__chat {
+  .brands-banners__link:hover .brands-banners__chat {
     background-color: #171717;
   }
 
-  .item-bestsellers__picture img:hover {
+  .item-bestsellers__picture:hover {
     scale: 1.02;
+    opacity: 1;
   }
 
   .item-bestsellers__title:hover {
@@ -4504,6 +4818,21 @@ html {
     background-color: #171717;
   }
 
+  .item-categories__title:hover {
+    color: #ff6f42;
+  }
+
+  .item-categories__btn:hover {
+    color: #fff;
+    background-color: #ff6f42;
+    border-color: #ff6f42;
+  }
+
+  .item-categories__picture:hover {
+    scale: 1.015;
+    opacity: 1;
+  }
+
   .reviews__profile:hover {
     color: #fff;
     background-color: #ff6f42;
@@ -4511,6 +4840,7 @@ html {
 
   .item-blog__image img:hover {
     scale: 1.015;
+    opacity: 1;
   }
 
   .item-blog__link:hover {
@@ -4546,12 +4876,12 @@ html {
     color: #fff;
   }
 
-  .category-footer__icon:hover,
-  .category-footer__link:hover {
+  .brands-footer__icon:hover,
+  .brands-footer__link:hover {
     background-color: #ff6f42;
   }
 
-  .category-footer__chat:hover {
+  .brands-footer__chat:hover {
     background-color: #fff;
     color: #171717;
   }
