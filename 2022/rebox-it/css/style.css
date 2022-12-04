@@ -2144,6 +2144,7 @@ html {
   border: 1px solid #d8dfe9;
   border-radius: 0.25rem;
   letter-spacing: 0.01em;
+  z-index: 1;
   transition: background-color 0.3s ease 0s, color 0.3s ease 0s, border-color 0.3s ease 0s;
 }
 
@@ -2158,6 +2159,7 @@ html {
   border: 0.0625rem solid #d8dfe9;
   border-radius: 0.25rem;
   letter-spacing: 0.01em;
+  z-index: 1;
   transition: border-color 0.3s ease 0s, background-color 0.3s ease 0s, color 0.3s ease 0s;
 }
 
@@ -2233,7 +2235,8 @@ html {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 4.3125rem;
+  top: 4.375rem;
+  height: 23.5625rem;
   padding: 1.25rem 1.25rem 0 1.25rem;
   background-color: #fff;
   box-shadow: 0 -0.5rem 0.75rem rgba(195, 195, 197, 0.2);
@@ -2509,7 +2512,7 @@ html {
 
 .item-recommended__picture img {
   max-width: 13.875rem;
-  max-height: 8rem;
+  max-height: 7.9375rem;
   width: 100%;
 }
 
@@ -2573,6 +2576,7 @@ html {
   border: 1px solid #d8dfe9;
   border-radius: 0.25rem;
   letter-spacing: 0.01em;
+  z-index: 1;
   transition: background-color 0.3s ease 0s, color 0.3s ease 0s, border-color 0.3s ease 0s;
 }
 
@@ -2587,6 +2591,7 @@ html {
   border: 0.0625rem solid #d8dfe9;
   border-radius: 0.25rem;
   letter-spacing: 0.01em;
+  z-index: 1;
   transition: border-color 0.3s ease 0s, background-color 0.3s ease 0s, color 0.3s ease 0s;
 }
 
@@ -2673,6 +2678,7 @@ html {
   color: #fff;
   background-color: #ff6f42;
   border-radius: 0.5rem;
+  transition: background-color 0.3s ease 0s;
 }
 
 .chat-recommended__help {
@@ -2696,6 +2702,7 @@ html {
   border-radius: 0.75rem;
   margin-bottom: 0.5625rem;
   position: relative;
+  transition: background-color 0.3s ease 0s;
 }
 
 .chat-recommended__btn-help::after {
@@ -2708,6 +2715,7 @@ html {
   border-bottom-right-radius: 0.25rem;
   border-right: 1.25rem solid #171717;
   border-bottom: 0.6875rem solid transparent;
+  transition: border-right-color 0.3s ease 0s;
 }
 
 .chat-recommended__photo {
@@ -5616,7 +5624,7 @@ html {
     border-color: #ff6f42;
   }
 
-  .item-bestsellers__more:hover + .details {
+  .slick-active .item-bestsellers__more:hover + .details {
     visibility: visible;
     opacity: 1;
   }
@@ -5670,7 +5678,7 @@ html {
     border-color: #ff6f42;
   }
 
-  .item-recommended__more:hover + .details {
+  .slick-active .item-recommended__more:hover + .details {
     visibility: visible;
     opacity: 1;
   }
@@ -5679,6 +5687,18 @@ html {
     border-color: #ff6f42;
     background-color: #ff6f42;
     color: #fff;
+  }
+
+  .chat-recommended__btn:hover {
+    background-color: #171717;
+  }
+
+  .chat-recommended__btn-help:hover {
+    background-color: #ff6f42;
+  }
+
+  .chat-recommended__btn-help:hover::after {
+    border-right-color: #ff6f42;
   }
 
   .footer__link:hover {
