@@ -2914,6 +2914,138 @@ html {
 
 /* </preloved> ========== */
 
+/* <faq> ========== */
+
+.faq__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.faq__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.faq__tabs .slick-track {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.faq__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.faq__content .see-more {
+  display: none;
+}
+
+.tab {
+  text-align: center;
+  padding: 0.6875rem 1.1875rem;
+  border: 0.0625rem solid #d8dfe9;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.3125;
+  white-space: nowrap;
+  transition: border-color 0.3s ease 0s, color 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+
+.tab.tab--active {
+  border-color: #ff6f42;
+  color: #fff;
+  background-color: #ff6f42;
+}
+
+.slick-initialized .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: none;
+}
+
+.content__list {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.content__column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 49%;
+}
+
+.content__column--one {
+  order: 1;
+}
+
+.content__column--two {
+  order: 2;
+}
+
+.content__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  background-color: #fff;
+  padding: 0 2.5rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(235, 235, 237, 0.2);
+  border-radius: 0.5rem;
+  padding: 0 1.25rem;
+}
+
+.content__title {
+  width: 85%;
+  font-weight: 600;
+  line-height: 1.4117647059;
+  padding: 1.5rem 0;
+}
+
+.content__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgba(23, 23, 23, 0.05);
+  font-size: 0.875rem;
+  rotate: 90deg;
+  transition: rotate 0.3s ease 0s, color 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+
+.content__arrow._spoiler-active {
+  rotate: -90deg;
+  color: #fff;
+  background-color: #ff6f42;
+}
+
+.content__text {
+  border-top: 0.0625rem solid #d8dfe9;
+  padding: 1.25rem 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.375;
+}
+
+.content.content--active {
+  display: block;
+}
+
+/* </faq> ========== */
+
 /* </MAIN> ================================================== */
 
 /* <FOOTER> ==================================================*/
@@ -3544,6 +3676,40 @@ html {
     left: calc(50vw - 1.75rem);
   }
 
+  .faq__content .see-more {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.375;
+    color: #3a3a3c;
+  }
+
+  .faq__content .see-more::before {
+    width: 1.25rem;
+    height: 1.25rem;
+    font-size: 0.875rem;
+    rotate: 90deg;
+  }
+
+  .content__column {
+    display: none;
+  }
+
+  .content__item {
+    display: none;
+    min-width: 100%;
+  }
+
+  .content__item:nth-child(1),
+  .content__item:nth-child(2),
+  .content__item:nth-child(3),
+  .content__item:nth-child(4) {
+    display: flex;
+  }
+
   .footer__top {
     flex-direction: column;
   }
@@ -4129,6 +4295,13 @@ html {
   .preloved__item {
     padding: 2rem 2rem 2.5rem;
     margin: 0 0.5rem;
+  }
+
+  .content__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-width: 100%;
+    gap: 1.25rem;
   }
 
   .footer__body {
@@ -4804,6 +4977,24 @@ html {
     font-size: 0.9375rem;
   }
 
+  .content__list {
+    gap: 1rem;
+  }
+
+  .content__item {
+    gap: 1.25rem;
+  }
+
+  .content__title {
+    font-size: 0.875rem;
+    padding: 1.25rem 0;
+  }
+
+  .content__text {
+    font-size: 0.875rem;
+    padding: 1rem 0 1.25rem;
+  }
+
   .footer__body {
     padding-bottom: 3.75rem;
   }
@@ -5420,6 +5611,10 @@ html {
     left: calc(50vw - 0.46875rem);
   }
 
+  .content__title {
+    width: 75%;
+  }
+
   .card-footer__items {
     gap: 0.25rem;
   }
@@ -5698,6 +5893,15 @@ html {
 
   .chat-recommended__btn-help:hover::after {
     border-right-color: #ff6f42;
+  }
+
+  .tab:hover {
+    border-color: #ff6f42;
+  }
+
+  .content__arrow:hover {
+    color: #fff;
+    background-color: #ff6f42;
   }
 
   .footer__link:hover {
