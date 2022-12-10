@@ -1721,7 +1721,7 @@ html {
   font-size: 2rem;
   line-height: 1.34375;
   opacity: 0;
-  transition: opacity 0.3s ease 0.9s;
+  transition: opacity 0.8s ease 0.8s;
 }
 
 .slick-active .item-banners__text {
@@ -1744,7 +1744,7 @@ html {
   letter-spacing: 0.02em;
   margin-top: 2.75rem;
   opacity: 0;
-  transition: background-color 0.3s ease 0s, color 0.3s ease 0s, opacity 0.3s ease 1.6s;
+  transition: background-color 0.5s ease 0s, color 0.5s ease 0s, opacity 0.5s ease 1.6s;
 }
 
 .slick-active .item-banners__link {
@@ -2933,17 +2933,6 @@ html {
   gap: 0.75rem;
 }
 
-.faq__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.75rem;
-}
-
-.faq__content .see-more {
-  display: none;
-}
-
 .tab {
   text-align: center;
   padding: 0.6875rem 1.1875rem;
@@ -2956,7 +2945,7 @@ html {
   transition: border-color 0.3s ease 0s, color 0.3s ease 0s, background-color 0.3s ease 0s;
 }
 
-.tab.tab--active {
+.tab--active {
   border-color: #ff6f42;
   color: #fff;
   background-color: #ff6f42;
@@ -2969,6 +2958,21 @@ html {
 }
 
 .content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.content--active {
+  display: flex;
+}
+
+.content .see-more {
+  display: none;
+}
+
+.content .see-more--active {
   display: none;
 }
 
@@ -3038,10 +3042,6 @@ html {
   padding: 1.25rem 0 1.5rem;
   font-size: 1rem;
   line-height: 1.375;
-}
-
-.content.content--active {
-  display: block;
 }
 
 /* </faq> ========== */
@@ -3676,7 +3676,7 @@ html {
     left: calc(50vw - 1.75rem);
   }
 
-  .faq__content .see-more {
+  .content .see-more--active {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -3687,7 +3687,7 @@ html {
     color: #3a3a3c;
   }
 
-  .faq__content .see-more::before {
+  .content .see-more--active::before {
     width: 1.25rem;
     height: 1.25rem;
     font-size: 0.875rem;
@@ -3699,8 +3699,12 @@ html {
   }
 
   .content__item {
-    display: none;
     min-width: 100%;
+    display: none;
+  }
+
+  .content__item--active {
+    display: flex;
   }
 
   .content__item:nth-child(1),
