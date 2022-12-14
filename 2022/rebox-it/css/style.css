@@ -3046,6 +3046,40 @@ html {
 
 /* </faq> ========== */
 
+/* <page-404> ========== */
+
+.page-404 {
+  padding: 6.25rem 0;
+}
+
+.page-404__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.page-404__icon {
+  font-size: 10.75rem;
+  color: #ff6f42;
+  margin-bottom: 1.25rem;
+}
+
+.page-404__btn {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.2777777778;
+  letter-spacing: 0.01em;
+  text-align: center;
+  padding: 0.75rem 2rem;
+  background-color: #ff6f42;
+  color: #fff;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease 0s;
+}
+
+/* </page-404> ========== */
+
 /* </MAIN> ================================================== */
 
 /* <FOOTER> ==================================================*/
@@ -5034,6 +5068,12 @@ html {
   }
 }
 
+@media (max-width: 47.9375em) {
+  .page-404__icon {
+    font-size: 8.75rem;
+  }
+}
+
 @media (max-width: 42.18625em) {
   .home-recommended__items {
     max-width: 18.75rem;
@@ -5351,6 +5391,14 @@ html {
 
   .categories__items {
     width: 24rem;
+  }
+}
+
+@media (max-width: 37.4375em) {
+  .page-404__icon {
+    font-size: calc(
+      70px + 320.45 * ((100vw - 320px) / 1280)
+    );
   }
 }
 
@@ -5906,6 +5954,10 @@ html {
   .content__arrow:hover {
     color: #fff;
     background-color: #ff6f42;
+  }
+
+  .page-404__btn:hover {
+    background-color: #171717;
   }
 
   .footer__link:hover {
