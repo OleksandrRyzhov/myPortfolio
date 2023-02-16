@@ -76,7 +76,6 @@
   outline: none;
 }
 
-a:focus,
 a:active {
   outline: none;
 }
@@ -203,6 +202,7 @@ body {
 
 .logo {
   font-size: 2.0625rem;
+  border-radius: 0.25rem;
 }
 
 .social {
@@ -257,6 +257,10 @@ img {
   border-top-right-radius: 28.125rem;
 }
 
+.slick-arrow {
+  border-radius: 0.25rem;
+}
+
 /* </COMMON> ================================================== */
 
 /* <HEADER> ==================================================*/
@@ -301,6 +305,7 @@ img {
   background: url("../img/icons/icons.svg#sub-logo") center/cover no-repeat;
   animation: scroll 1s ease infinite normal;
   transition: color 0.3s ease 0s;
+  border-radius: 50%;
 }
 
 @keyframes scroll {
@@ -353,15 +358,20 @@ img {
   transition: color 0.3s ease 0s;
 }
 
+.menu__link {
+  border-radius: 0.25rem;
+}
+
 .icon-menu {
   display: block;
   position: relative;
   flex: 0 0 1.875rem;
   margin-right: 9.375rem;
   width: 1.875rem;
-  height: 1.125rem;
+  height: 1.875rem;
   background-color: inherit;
   z-index: 10;
+  border-radius: 0.75rem;
 }
 
 .icon-menu span,
@@ -377,11 +387,11 @@ img {
 }
 
 .icon-menu::before {
-  top: 0;
+  top: 0.375rem;
 }
 
 .icon-menu::after {
-  bottom: 0;
+  bottom: 0.375rem;
 }
 
 .icon-menu span {
@@ -652,6 +662,7 @@ img {
 
 .footer__link {
   transition: color 0.3s ease 0s;
+  border-radius: 0.25rem;
 }
 
 /* </FOOTER> ================================================== */
@@ -1029,6 +1040,15 @@ img {
 }
 
 @media (any-hover: hover) {
+  :focus {
+    outline: 0.125rem solid #1d90f5;
+    outline-offset: 0.25rem;
+  }
+
+  body:not(.user-is-tabbing) :focus {
+    outline: none;
+  }
+
   .social__link:hover {
     background-color: #c1a1d2;
   }
