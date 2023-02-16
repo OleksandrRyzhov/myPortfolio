@@ -17,7 +17,6 @@
   outline: none;
 }
 
-a:focus,
 a:active {
   outline: none;
 }
@@ -530,7 +529,7 @@ body {
   position: absolute;
   top: 20px;
   left: 0;
-  translate: -38%;
+  transform: translate(-38%);
 }
 
 .form__bike-price::after,
@@ -595,6 +594,12 @@ body {
   text-decoration: underline;
   font-size: 0.75rem;
   line-height: 0.9375rem;
+  border-radius: 0.25rem;
+}
+
+.footer__social-link {
+  display: inline-block;
+  border-radius: 0.25rem;
 }
 
 .footer__social-link + .footer__social-link {
@@ -614,6 +619,9 @@ body {
 .footer__contacts-link {
   display: flex;
   align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 0.25rem;
 }
 
 .footer__contacts-link + .footer__contacts-link {
@@ -987,5 +995,17 @@ body {
     bottom: calc(
       55px + 297.5 * ((100vw - 320px) / 1230)
     );
+  }
+}
+
+@media (any-hover: hover) {
+  .focus,
+  :focus {
+    outline: 0.125rem solid #1d90f5;
+    outline-offset: 0.25rem;
+  }
+
+  body:not(.user-is-tabbing) :focus {
+    outline: none;
   }
 }
