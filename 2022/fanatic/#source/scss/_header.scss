@@ -6,6 +6,8 @@
   min-height: 100vh;
   position: relative;
   margin-bottom: 80px;
+  padding: 0 15px;
+  width: 100vw;
   &::before {
     content: "";
     position: absolute;
@@ -46,13 +48,9 @@
     line-height: 22px;
   }
   .logo {
+    border-radius: 4px;
     path {
       transition: fill 0.3s ease;
-    }
-    &:hover {
-      path {
-        fill: #0093a1;
-      }
     }
   }
   &__btn,
@@ -71,18 +69,11 @@
     border-radius: 30px;
     text-align: center;
     width: 193px;
-    &:hover {
-      background-color: #b9c400;
-      color: #262c27;
-    }
   }
   &__phone {
     background-color: rgba($color: #ddd, $alpha: 0.4);
-    transition: font-size 0.3s ease;
-    &:hover {
-      font-size: 24px;
-      line-height: 27px;
-    }
+    transition: transform 0.3s ease;
+    border-radius: 4px;
   }
   &__content {
     min-height: calc(100vh - 161px);

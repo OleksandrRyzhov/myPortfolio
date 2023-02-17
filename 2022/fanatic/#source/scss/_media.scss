@@ -172,6 +172,7 @@
 }
 @media (max-width: 720px) {
   .header {
+    padding: 0;
     background-position: 40%;
     &__top {
       flex-wrap: wrap;
@@ -229,7 +230,6 @@
     }
   }
 }
-
 @media (max-width: 600px) {
   .title {
     font-size: 48px;
@@ -265,11 +265,6 @@
       width: 150px;
       height: 148px;
       font-size: 28px;
-      &:hover {
-        font-size: 34px;
-        width: 200px;
-        height: 198px;
-      }
     }
   }
   .gallery {
@@ -284,7 +279,7 @@
   .header {
     &__content {
       &-box {
-        margin: 0;
+        margin-right: 15px;
       }
     }
     &__decor-text {
@@ -303,6 +298,11 @@
         max-width: 280px;
       }
     }
+  }
+}
+@media (max-width: 480px) {
+  .header__content-box {
+    margin: 0;
   }
 }
 @media (max-width: 460px) {
@@ -385,11 +385,6 @@
       width: 110px;
       height: 108px;
       font-size: 20px;
-      &:hover {
-        font-size: 26px;
-        width: 160px;
-        height: 158px;
-      }
     }
   }
   .gallery {
@@ -428,5 +423,68 @@
 @media (max-width: 370px) {
   .title {
     font-size: 34px;
+  }
+}
+@media (any-hover: hover) {
+  :focus {
+    outline: 0.125rem solid #1d90f5;
+    outline-offset: 0.25rem;
+  }
+  body:not(.user-is-tabbing) :focus {
+    outline: none;
+  }
+  .popup-btn:hover {
+    path {
+      fill: #b9c400;
+    }
+    circle {
+      stroke: #b9c400;
+    }
+    span {
+      color: #b9c400;
+    }
+  }
+  .header {
+    .logo:hover {
+      path {
+        fill: #0093a1;
+      }
+    }
+    &__btn:hover {
+      background-color: #b9c400;
+      color: #262c27;
+    }
+    &__phone:hover {
+      transform: scale(1.15);
+    }
+  }
+  .buy {
+    &__item-title:hover {
+      color: #0093a1;
+    }
+    &__price:hover {
+      transform: scale(1.25);
+    }
+    &__btn:hover {
+      border-color: #b9c400;
+      color: #262c27;
+      background-color: #b9c400;
+    }
+  }
+  .footer {
+    &__logo:hover {
+      path {
+        fill: #0093a1;
+      }
+    }
+    &__gallery-item:hover {
+      transform: scale(1.02);
+    }
+    &__menu-link:hover {
+      color: #0093a1;
+    }
+    &__form-btn:hover {
+      background-color: #e4e4e4;
+    }
   }
 }

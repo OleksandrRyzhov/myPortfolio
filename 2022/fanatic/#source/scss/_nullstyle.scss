@@ -15,7 +15,6 @@
 :active {
   outline: none;
 }
-a:focus,
 a:active {
   outline: none;
 }
@@ -47,6 +46,7 @@ input::-ms-clear {
 }
 button {
   cursor: pointer;
+  background-color: transparent;
 }
 button::-moz-focus-inner {
   padding: 0;

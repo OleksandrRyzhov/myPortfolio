@@ -29,8 +29,6 @@
     transition: all 0.8s ease 0s;
     opacity: 0;
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
-    // &--video {
-    // }
   }
   &__close {
     position: absolute;
@@ -47,6 +45,7 @@
     max-width: 1280px;
     width: 100vw;
     iframe {
+      border: none;
       object-fit: cover;
       position: absolute;
       top: 0;

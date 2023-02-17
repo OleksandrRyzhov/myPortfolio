@@ -17,7 +17,6 @@
   outline: none;
 }
 
-a:focus,
 a:active {
   outline: none;
 }
@@ -54,6 +53,7 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
+  background-color: transparent;
 }
 
 button::-moz-focus-inner {
@@ -103,12 +103,16 @@ body.lock {
   overflow-y: hidden;
 }
 
+.lock .main {
+  width: 100vw;
+}
+
 a {
   color: inherit;
 }
 
 .wrapper {
-  overflow: hidden;
+  overflow-x: hidden;
   min-height: 100%;
 }
 
@@ -122,6 +126,7 @@ a {
   position: absolute;
   text-align: center;
   background-color: transparent;
+  border-radius: 50% 50% 4px 4px;
 }
 .popup-btn svg {
   padding: 0px 0px 12px 0px;
@@ -138,15 +143,6 @@ a {
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
-}
-.popup-btn:hover path {
-  fill: #b9c400;
-}
-.popup-btn:hover circle {
-  stroke: #b9c400;
-}
-.popup-btn:hover span {
-  color: #b9c400;
 }
 
 .title {
@@ -172,6 +168,8 @@ a {
   min-height: 100vh;
   position: relative;
   margin-bottom: 80px;
+  padding: 0 15px;
+  width: 100vw;
 }
 .header::before {
   content: "";
@@ -222,13 +220,13 @@ a {
   font-weight: 700;
   line-height: 22px;
 }
+.header .logo {
+  border-radius: 4px;
+}
 .header .logo path {
   -webkit-transition: fill 0.3s ease;
   -o-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
-}
-.header .logo:hover path {
-  fill: #0093a1;
 }
 .header__btn, .header__phone,
 .header .logo {
@@ -248,18 +246,14 @@ a {
   text-align: center;
   width: 193px;
 }
-.header__btn:hover {
-  background-color: #b9c400;
-  color: #262c27;
-}
 .header__phone {
   background-color: rgba(221, 221, 221, 0.4);
-  -webkit-transition: scale 0.3s ease;
-  -o-transition: scale 0.3s ease;
-  transition: scale 0.3s ease;
-}
-.header__phone:hover {
-  scale: 1.15;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  border-radius: 4px;
 }
 .header__content {
   min-height: calc(100vh - 161px);
@@ -339,7 +333,8 @@ a {
   background-position: center;
   position: relative;
   color: #fff;
-  margin-top: 50px;
+  margin: 50px -30px 0;
+  padding: 0 30px;
 }
 .info::before {
   content: "";
@@ -456,9 +451,7 @@ a {
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
-}
-.buy__item-title:hover {
-  color: #0093a1;
+  border-radius: 4px;
 }
 .buy__price {
   position: absolute;
@@ -481,16 +474,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.buy__price:hover {
-  font-size: 40px;
-  width: 250px;
-  height: 248px;
-  right: 0;
-  bottom: 105px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  border-radius: 50%;
 }
 .buy__btn {
   font-family: "Comfortaa", cursive;
@@ -509,22 +498,19 @@ a {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.buy__btn:hover {
-  border-color: #b9c400;
-  color: #262c27;
-  background-color: #b9c400;
-}
 
 /* </BUY> */
 /* <TECHNOLOGY> */
 .technology {
-  margin: 0px 0px 150px 0px;
+  margin: 0px 0px 150px;
 }
 .technology__top {
   background-image: url("../img/tech-bg.png");
   background-repeat: no-repeat;
   background-position: 50% 0%;
   background-size: cover;
+  margin: 0 -30px;
+  padding: 0 30px;
 }
 .technology__top-inner {
   position: relative;
@@ -739,9 +725,6 @@ a {
   position: relative;
   top: 0;
 }
-.footer__form-btn:hover {
-  background-color: #e4e4e4;
-}
 .footer__form-btn:active {
   top: 2px;
   -webkit-box-shadow: 0 2px 0 #acacac;
@@ -751,16 +734,17 @@ a {
   margin-bottom: 27px;
 }
 .footer__logo {
+  border-radius: 4px;
   -ms-flex-item-align: start;
       align-self: start;
+}
+.footer__logo svg {
+  pointer-events: none;
 }
 .footer__logo path {
   -webkit-transition: fill 0.3s;
   -o-transition: fill 0.3s;
   transition: fill 0.3s;
-}
-.footer__logo:hover path {
-  fill: #0093a1;
 }
 .footer__social-title {
   margin-bottom: 28px;
@@ -773,13 +757,16 @@ a {
   margin-bottom: 50px;
 }
 .footer__gallery-item {
-  width: 100%;
-  -webkit-transition: scale 0.3s;
-  -o-transition: scale 0.3s;
-  transition: scale 0.3s;
+  min-width: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
 }
-.footer__gallery-item:hover {
-  scale: 1.02;
+.footer__gallery-link {
+  border-radius: 4px;
+  overflow: hidden;
 }
 .footer__menu-list {
   font-weight: 700;
@@ -791,12 +778,10 @@ a {
           justify-content: space-between;
 }
 .footer__menu-link {
-  -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
-}
-.footer__menu-link:hover {
-  color: #0093a1;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+  border-radius: 4px;
 }
 
 /* </FOOTER> ================================================== */
@@ -864,6 +849,7 @@ a {
   width: 100vw;
 }
 .popup__video iframe {
+  border: none;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
@@ -1029,6 +1015,7 @@ a {
 }
 @media (max-width: 720px) {
   .header {
+    padding: 0;
     background-position: 40%;
   }
   .header__top {
@@ -1110,18 +1097,13 @@ a {
     height: 148px;
     font-size: 28px;
   }
-  .buy__price:hover {
-    font-size: 34px;
-    width: 200px;
-    height: 198px;
-  }
   .gallery-max__text {
     height: 29.5%;
   }
 }
 @media (max-width: 520px) {
   .header__content-box {
-    margin: 0;
+    margin-right: 15px;
   }
   .header__decor-text--one, .header__decor-text--two {
     font-size: 100px;
@@ -1135,6 +1117,11 @@ a {
   .header__decor-text--three {
     font-size: 24px;
     max-width: 280px;
+  }
+}
+@media (max-width: 480px) {
+  .header__content-box {
+    margin: 0;
   }
 }
 @media (max-width: 460px) {
@@ -1196,11 +1183,6 @@ a {
     height: 108px;
     font-size: 20px;
   }
-  .buy__price:hover {
-    font-size: 26px;
-    width: 160px;
-    height: 158px;
-  }
   .gallery-max__text {
     height: 29%;
     -ms-flex-item-align: stretch;
@@ -1228,6 +1210,63 @@ a {
 @media (max-width: 370px) {
   .title {
     font-size: 34px;
+  }
+}
+@media (any-hover: hover) {
+  :focus {
+    outline: 0.125rem solid #1d90f5;
+    outline-offset: 0.25rem;
+  }
+  body:not(.user-is-tabbing) :focus {
+    outline: none;
+  }
+  .popup-btn:hover path {
+    fill: #b9c400;
+  }
+  .popup-btn:hover circle {
+    stroke: #b9c400;
+  }
+  .popup-btn:hover span {
+    color: #b9c400;
+  }
+  .header .logo:hover path {
+    fill: #0093a1;
+  }
+  .header__btn:hover {
+    background-color: #b9c400;
+    color: #262c27;
+  }
+  .header__phone:hover {
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  .buy__item-title:hover {
+    color: #0093a1;
+  }
+  .buy__price:hover {
+    -webkit-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  .buy__btn:hover {
+    border-color: #b9c400;
+    color: #262c27;
+    background-color: #b9c400;
+  }
+  .footer__logo:hover path {
+    fill: #0093a1;
+  }
+  .footer__gallery-item:hover {
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .footer__menu-link:hover {
+    color: #0093a1;
+  }
+  .footer__form-btn:hover {
+    background-color: #e4e4e4;
   }
 }
 /* </MEDIA> ================================================== */
