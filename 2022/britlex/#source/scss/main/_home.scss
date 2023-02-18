@@ -1,5 +1,4 @@
 .home {
-  padding-top: 180px;
   &__content {
     display: flex;
     justify-content: space-between;
@@ -29,22 +28,6 @@
       border-radius: 50%;
       transition: all 2s ease 0s;
     }
-    &:hover {
-      &::before {
-        content: "";
-        position: absolute;
-        right: 16px;
-        top: 104px;
-        width: 75px;
-        height: 75px;
-        background-color: rgba(#ffffa2, 0.7);
-        border-radius: 50%;
-        z-index: 1;
-      }
-      &::after {
-        background-color: #ffffa2;
-      }
-    }
     br {
       &:last-child {
         display: none;
@@ -69,10 +52,6 @@
     font-size: rem(36);
     line-height: rem(54);
     transition: all 0.3s ease 0s;
-    &:hover {
-      box-shadow: 0 0 15px #19b4e8;
-      color: #24d8e8;
-    }
   }
   &__photo {
     max-width: 653px;

@@ -8,7 +8,9 @@
     border-top: 1px solid #c4c4c4;
   }
   &__logo {
-    padding-right: 30px;
+    span {
+      pointer-events: none;
+    }
   }
   &__list {
     display: flex;
@@ -39,29 +41,7 @@
       font-size: rem(24);
       line-height: rem(36);
       color: $colorGray;
-      &:hover {
-        position: relative;
-        &::before {
-          content: "";
-          position: absolute;
-          bottom: -5px;
-          width: calc(100% - 10px);
-          height: 2px;
-          background-color: $colorGray;
-          animation: line 1s;
-        }
-        @keyframes line {
-          0% {
-            width: 0;
-          }
-          50% {
-            width: 105%;
-          }
-          100% {
-            width: calc(100% - 10px);
-          }
-        }
-      }
+      border-radius: 4px;
     }
   }
 }

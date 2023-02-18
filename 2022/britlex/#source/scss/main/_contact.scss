@@ -49,10 +49,6 @@
       font-size: rem(20);
       line-height: rem(30);
       transition: all 0.3s ease 0s;
-      &:hover {
-        box-shadow: 0 0 15px #19b4e8;
-        color: #24d8e8;
-      }
     }
   }
   &__text {
