@@ -32,6 +32,7 @@ function lazyScrollCheck() {
       lazyImages[imgIndex].srcset = lazyImages[imgIndex].dataset.srcset;
       lazyImages[imgIndex].removeAttribute("data-srcset");
     }
+    ibg();
     delete lazyImagesPositions[imgIndex];
   }
 }
@@ -47,5 +48,3 @@ function ibg() {
     }
   }
 }
-
-ibg();
