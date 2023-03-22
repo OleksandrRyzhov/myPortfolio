@@ -1,13 +1,16 @@
 .header {
-  background-image: url("../img/header-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   min-height: 100vh;
   position: relative;
   margin-bottom: 80px;
   padding: 0 15px;
   width: 100vw;
+  .ibg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
   &::before {
     content: "";
     position: absolute;

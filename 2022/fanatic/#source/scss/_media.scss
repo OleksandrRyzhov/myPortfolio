@@ -36,6 +36,7 @@
       flex-wrap: wrap;
     }
     &-min {
+      margin: 0 auto 150px;
       margin-top: 0;
       grid-template: auto auto / 2.3125fr 1fr;
       width: 100%;
@@ -152,7 +153,6 @@
   }
   .gallery {
     &-min {
-      gap: 8px 10px;
       margin-bottom: 68px;
     }
   }
@@ -246,6 +246,7 @@
   }
   .gallery {
     &-min {
+      gap: 8px 10px;
       padding: 20px 10px;
       &::before {
         border-radius: 200px 0px 110px;
@@ -477,7 +478,7 @@
         fill: #0093a1;
       }
     }
-    &__gallery-item:hover {
+    &__gallery-item img:hover {
       transform: scale(1.02);
     }
     &__menu-link:hover {

@@ -1,12 +1,15 @@
 .info {
-  background-image: url("../img/info-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   position: relative;
   color: #fff;
   margin: 50px -30px 0;
   padding: 0 30px;
+  .ibg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -43,6 +46,12 @@
     }
     &-img {
       position: relative;
+      width: 227px;
+      aspect-ratio: 227/618;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   &__btn {
