@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const body = document.querySelector("body");
   const main = document.querySelector("main");
   const lockPadding = document.querySelectorAll(".lock-padding");
+  const loadVideoBlock = document.querySelectorAll(".js-load-video");
 
   let unlock = true;
 
@@ -44,6 +45,15 @@ document.addEventListener("DOMContentLoaded", function () {
           popupClose(e.target.closest(".popup"));
         }
       });
+      loadVideoBlock.forEach((video) => {
+        if (curentPopup && video && !video.classList.contains("js-loaded")) {
+          const loadVideoUrl = video.dataset.video;
+          if (loadVideoUrl) {
+            video.insertAdjacentHTML("beforeend", `<iframe src="${loadVideoUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
+            video.classList.add("js-loaded");
+          }
+        }
+      });
     }
   }
   function popupClose(popupActive, doUnlock = true) {
@@ -56,8 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function bodyLock() {
-    const lockPaddingValue =
-      window.innerWidth - document.querySelector(".wrapper").offsetWidth + "px";
+    const lockPaddingValue = window.innerWidth - document.querySelector(".wrapper").offsetWidth + "px";
 
     if (lockPadding.length > 0) {
       for (let index = 0; index < lockPadding.length; index++) {
